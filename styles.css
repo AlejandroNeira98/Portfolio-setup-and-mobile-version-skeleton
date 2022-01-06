@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+
 header {
   background: #3c3a39;
   padding: 0%;
@@ -11,7 +13,7 @@ header {
   justify-content: space-between;
 }
 
-header p {
+header a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -29,9 +31,12 @@ header p {
   height: 0.8rem;
 }
 
+.menu-icon:hover {
+  cursor: pointer;
+}
 body {
-  background-image: url(Images\Illustration.png);
-  background-position: 100% 100%;
+  background-image: url("./Images/Illustration.png");
+  background-position: 100% 180%;
   background-repeat: no-repeat;
   background-color: #1c1a19;
 }
@@ -48,6 +53,8 @@ main {
 h1 {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
+  font-size: 56px;
+  font-weight: lighter;
   width: 327px;
   height: 124px;
   left: 24px;
@@ -60,7 +67,7 @@ h2 {
   color: #fff5e1;
 }
 
-main p {
+main a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -68,11 +75,17 @@ main p {
 }
 
 .Social-container {
+  list-style-type: none;
   display: flex;
-  width: 200px;
-  height: 18px;
+  width: 100px;
   justify-content: space-between;
-  align-items: stretch;
-  flex: 1;
-  margin-left: 11px;
+}
+
+.Social-container:hover{
+  cursor: pointer;
+}
+
+.Gato, .LinkedIn, .Peace, .Twitter, .M {
+  width: 18px;
+  height: 18px;
 }
