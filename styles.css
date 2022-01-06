@@ -11,15 +11,14 @@ header {
   justify-content: space-between;
 }
 
-header p {   
-  font-family: Roboto;
+header p {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: auto;   
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   margin-left: 1.5rem;   
 }
 
@@ -35,16 +34,16 @@ body {
   background-position: 100% 100%;
   background-repeat: no-repeat;  
   background-color: #1c1a19;
-} 
+}
 
 body div {
   display: inline-flex;
   justify-self: self-end;
-} 
+}
 
 main {
   margin-left: 24px;
-} 
+}
 
 h1 {
   color: #ff6b00;
@@ -65,10 +64,10 @@ p{
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  color: #ffffff;
+  color: #fff;
 }
 
-.Social-container{
+.Social-container {
   display: flex;
   width: 200px;
   height: 18px;
