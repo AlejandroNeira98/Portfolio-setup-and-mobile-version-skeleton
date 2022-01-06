@@ -43,11 +43,6 @@ body {
   background-color: #1c1a19;
 }
 
-body div {
-  display: inline-flex;
-  justify-self: self-end;
-}
-
 main {
   margin-left: 24px;
 }
@@ -100,4 +95,13 @@ main a {
 .M {
   width: 33px;
   height: 33px;
+}
+
+.Works {
+  display: grid;
+  grid-template-rows: auto;
+  background-color: #e5e5e5;
+}
+.Works article {
+  display: flex;
 }
