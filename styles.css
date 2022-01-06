@@ -19,20 +19,20 @@ header p {
   align-items: center;
   text-align: center;
   color: #fff;
-  margin-left: 1.5rem;   
+  margin-left: 1.5rem; 
 }
 
 .menu-icon img {
   margin-right: 1.5rem;
   padding-top: 0.4rem;
   width: 1.2rem;
-  height: 0.8rempx;
+  height: 0.8rem;
 }
 
 body {
-  background-image: url(Images\Illustration.png); 
+  background-image: url(Images\Illustration.png);
   background-position: 100% 100%;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-color: #1c1a19;
 }
 
@@ -47,7 +47,7 @@ main {
 
 h1 {
   color: #ff6b00;
-  font-family: Crete Round;
+  font-family: "Crete" Round;
   width: 327px;
   height: 124px;
   left: 24px;
@@ -55,13 +55,13 @@ h1 {
 }
 
 h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   color: #fff5e1;
 }
 
-p{
-  font-family: Poppins;
+main p {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: normal;
   color: #fff;
