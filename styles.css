@@ -34,6 +34,7 @@ header a {
 .menu-icon:hover {
   cursor: pointer;
 }
+
 body {
   background-image: url("./Images/Illustration.png");
   background-position: 100% 180%;
@@ -81,11 +82,15 @@ main a {
   justify-content: space-between;
 }
 
-.Social-container:hover{
+.Social-container:hover {
   cursor: pointer;
 }
 
-.Gato, .LinkedIn, .Peace, .Twitter, .M {
+.Gato,
+.LinkedIn,
+.Peace,
+.Twitter,
+.M {
   width: 18px;
   height: 18px;
 }
