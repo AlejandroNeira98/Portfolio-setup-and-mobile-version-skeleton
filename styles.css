@@ -80,8 +80,8 @@ main a {
   list-style-type: none;
   display: flex;
   width: 100px;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Social-container:hover {
