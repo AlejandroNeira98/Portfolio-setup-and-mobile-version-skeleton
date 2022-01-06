@@ -19,7 +19,7 @@ header p {
   align-items: center;
   text-align: center;
   color: #fff;
-  margin-left: 1.5rem; 
+  margin-left: 1.5rem;
 }
 
 .menu-icon img {
@@ -47,7 +47,7 @@ main {
 
 h1 {
   color: #ff6b00;
-  font-family: "Crete" Round;
+  font-family: "Crete", Round;
   width: 327px;
   height: 124px;
   left: 24px;
@@ -55,13 +55,13 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
 }
 
 main p {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   color: #fff;
