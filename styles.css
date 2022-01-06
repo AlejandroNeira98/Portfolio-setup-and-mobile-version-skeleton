@@ -37,7 +37,8 @@ header a {
 
 body {
   background-image: url("./Images/Illustration.png");
-  background-position: 100% 180%;
+  background-position: bottom right;
+  height: 550px;
   background-repeat: no-repeat;
   background-color: #1c1a19;
 }
@@ -79,18 +80,24 @@ main a {
   list-style-type: none;
   display: flex;
   width: 100px;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .Social-container:hover {
   cursor: pointer;
 }
 
-.Gato,
+.Gato {
+  width: 16px;
+  height: 16px;
+  margin-right: 9px;
+}
+
 .LinkedIn,
 .Peace,
 .Twitter,
 .M {
-  width: 18px;
-  height: 18px;
+  width: 33px;
+  height: 33px;
 }
