@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 header {
   background: #3c3a39;
@@ -41,6 +44,7 @@ body {
   height: 550px;
   background-repeat: no-repeat;
   background-color: #1c1a19;
+  margin-right: 0%;
 }
 
 main {
@@ -58,7 +62,7 @@ h1 {
   margin-top: 10rem;
 }
 
-h2 {
+main h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
@@ -100,8 +104,157 @@ main a {
 .Works {
   display: grid;
   grid-template-rows: auto;
-  background-color: #e5e5e5;
+  background-color: #fff;
+  padding-bottom: 120px;
 }
+
 .Works article {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+#Multi {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+}
+
+.First {
+  border-bottom: solid black;
+  padding-bottom: 2rem;
+  width: 320px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 120px;
+  font-size: 40px;
+}
+.boxes {
+  display: flex;
+}
+
+.boxes >* {
+  margin-right: 12px;
+  max-height: 40;
+  padding: 10px 12px 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: medium;
+  Font size: 15px;
+}
+
+.white >* {
+  border: 1px solid #8993A4;
+}
+
+.Project {
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: bold;
+  padding: 12px 12px 12px 12px;
+  color: white;
+  margin-top: 12px;
+}
+
+.repeated {
+  background-image: url("./Images/Fondo_articles.png");
+  margin-top: 24px;
+  height: 380px;
+}
+
+.repeated h2 {
+  color: white;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 84px 16px 12px 16px;
+}
+.repeated p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.black{
+  margin-left: 16px;
+}
+
+.black >* {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 12px 10px 12px;
+  margin-right: 12px;
+  background: rgba(255, 255, 255, 0.24)
+}
+
+.repeated .Project { 
+ width: 305px;
+ text-align: center;
+}
+
+.aboutme {
+  background-image: url("./Images/Group.png");
+  background-position: bottom right;
+  height: 550px;
+  background-repeat: no-repeat;
+}
+.aboutme h2{
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  margin: 120px 24px 24px 24px;
+  font-weight: normal;
+}
+
+.aboutme p {
+  color: #F4F5F7;
+  font-family: 'Inter', sans-serif;
+  margin: 0px 24px 24px 24px
+}
+
+.aboutme div {
+  color: white;
+  padding: 12px 12px 12px 12px;
+  margin-left: 24px;
+  background-color: #ff6b00;
+  width: 100px;
+  margin-bottom: 209px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 12px;
+}
+hr {
+  color: white;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 137px;
+}
+
+.list ul {
+  text-align: center;
+  list-style: none;
+}
+
+.list ul li {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 44px;
+}
+
+.listsub {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 44px;
 }
