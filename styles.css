@@ -129,10 +129,14 @@ main a {
   margin-bottom: 80px;
   margin-top: 120px;
   font-size: 40px;
+  font-family: 'Crete Round', serif;
+  font-weight: normal;
 }
 
 .boxes {
   display: flex;
+  list-style-type: none;
+  padding-left: 0.001%;
 }
 
 .boxes > * {
