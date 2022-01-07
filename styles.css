@@ -156,6 +156,8 @@ main a {
   padding: 12px 12px 12px 12px;
   color: white;
   margin-top: 12px;
+  border:none;
+  font-size: 17px;
 }
 
 .repeated {
@@ -198,8 +200,12 @@ main a {
   background: rgba(255, 255, 255, 0.24);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .repeated .Project {
-  width: 305px;
+  width: 327px;
   text-align: center;
 }
 
@@ -224,16 +230,16 @@ main a {
   margin: 0.1px 24px 24px 24px;
 }
 
-.aboutme div {
+.aboutme button {
   color: white;
-  padding: 12px 12px 12px 12px;
+  padding: 12px 14px 12px 14px;
   margin-left: 24px;
   background-color: #ff6b00;
-  width: 100px;
+  width: auto;
   margin-bottom: 209px;
   font-family: 'Inter', sans-serif;
-  text-align: center;
-  font-size: 12px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 hr {
