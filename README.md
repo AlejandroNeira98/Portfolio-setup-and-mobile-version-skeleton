@@ -31,5 +31,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Linters, Istructions & Templates
+- Microverse Linters, Instructions & Templates
 
