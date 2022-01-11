@@ -147,13 +147,13 @@
     <section class="contact-form">
       <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
 
-      <form method="post">
+      <form method="post" action="https://formspree.io/f/xzbodpyk">
         <fieldset>
-          <input type="text" placeholder="Full name" maxlength="30" id="full-name" required>
+          <input type="text" name="full-name" placeholder="Full name" maxlength="30" id="full-name" required>
 
-          <input type="email" placeholder="Email address" id="email" required>
+          <input type="email" name="email" placeholder="Email address" id="email" required>
 
-          <textarea id="message" maxlength="500" required>Enter text here</textarea>
+          <textarea id="message" name="message" maxlength="500" required>Enter text here</textarea>
         </fieldset>
         <button class="contact-me" type="submit" >Get in touch</button>
       </form>
@@ -165,8 +165,8 @@
             <li><a href="https://twitter.com"><img class="Twitter" src="Images/Bird.png" alt="Twitter"></a></li>
             <li><img class="M" src="Images/M.png" alt="M">
         </ul>
+        <hr>
       </footer>
-      <hr>
     </section>
 </body>
 </html>

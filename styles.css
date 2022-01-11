@@ -325,8 +325,27 @@ hr {
   background-color: #fbf8f7;
 }
 
+form {
+  border-bottom: 1px solid #DFE1E6;
+  padding-bottom: 124px;
+}
+
 .contact-form .contact-me {
   padding: 12px;
   margin: 0;
   width: 131px;
+}
+
+footer ul{
+  margin: auto;
+  padding: 0%;
+}
+
+.contact-form hr {
+  height: 5px;
+  width: 134px;
+  top: 21px;
+  border-radius: 10px;
+  background: #0D151E;
+  margin-left: 41%;
 }
