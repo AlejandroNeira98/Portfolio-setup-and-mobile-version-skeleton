@@ -45,6 +45,7 @@ body {
   background-repeat: no-repeat;
   background-color: #1c1a19;
   margin-right: 0%;
+  margin: 0;
 }
 
 main {
@@ -233,7 +234,7 @@ button:hover {
 }
 
 .aboutme button,
-.contact-me button {
+.contact-me {
   color: white;
   padding: 12px 14px 12px 14px;
   margin-left: 24px;
@@ -271,4 +272,61 @@ hr {
   font-size: 22px;
   color: white;
   margin-bottom: 44px;
+}
+
+.contact-form {
+  background-color: white;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.contact-form h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.contact-form form,
+.contact-form form > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-form form > * {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+#full-name,
+#email,
+#message {
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dBd8d7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 15px 16px;
+  margin: 0 24px;
+}
+
+#message {
+  padding: 12px;
+  height: 114px;
+  background-color: #fbf8f7;
+}
+
+.contact-form .contact-me {
+  padding: 12px;
+  margin: 0;
+  width: 131px;
 }
