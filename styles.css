@@ -114,6 +114,7 @@ main a {
   align-items: flex-start;
   margin-left: 24px;
   margin-right: 24px;
+  max-width: 327px;
 }
 
 #Multi {
@@ -144,6 +145,7 @@ main a {
   padding: 10px 12px 10px 12px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
+  max-width: 100%;
 }
 
 .white > * {
@@ -205,7 +207,7 @@ button:hover {
 }
 
 .repeated .Project {
-  width: 327px;
+  width: 100%;
   text-align: center;
 }
 
