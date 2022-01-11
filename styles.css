@@ -232,7 +232,8 @@ button:hover {
   margin: 0.1px 24px 24px 24px;
 }
 
-.aboutme button {
+.aboutme button,
+.contact-me button {
   color: white;
   padding: 12px 14px 12px 14px;
   margin-left: 24px;
