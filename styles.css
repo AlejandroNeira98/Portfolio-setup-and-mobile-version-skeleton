@@ -45,7 +45,7 @@ body {
   background-repeat: no-repeat;
   background-color: #1c1a19;
   margin-right: 0%;
-  margin: 0;
+  margin: 0%;
 }
 
 main {
@@ -253,6 +253,11 @@ hr {
   margin-bottom: 137px;
 }
 
+footer ul{
+  margin: auto;
+  padding: 0%;
+}
+
 .list ul {
   text-align: center;
   list-style: none;
@@ -298,6 +303,11 @@ hr {
   gap: 24px;
 }
 
+form {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 124px;
+}
+
 .contact-form form > * {
   border: none;
   padding: 0;
@@ -309,7 +319,7 @@ hr {
 #message {
   width: 327px;
   border: none;
-  border-bottom: 1px solid #dBd8d7;
+  border-bottom: 1px solid #dbd8d7;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -325,20 +335,10 @@ hr {
   background-color: #fbf8f7;
 }
 
-form {
-  border-bottom: 1px solid #DFE1E6;
-  padding-bottom: 124px;
-}
-
 .contact-form .contact-me {
   padding: 12px;
   margin: 0;
   width: 131px;
-}
-
-footer ul{
-  margin: auto;
-  padding: 0%;
 }
 
 .contact-form hr {
@@ -346,6 +346,6 @@ footer ul{
   width: 134px;
   top: 21px;
   border-radius: 10px;
-  background: #0D151E;
+  background: #0d151e;
   margin-left: 41%;
 }
