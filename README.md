@@ -29,3 +29,17 @@ Give a ⭐️ if you like this project!
 
 - Microverse Linters, Instructions & Templates
 
+## Contributors 
+
+👤 **Richard Opiyo**
+
+- GitHub: [@richardoppiyo](https://github.com/richardopiyo)
+- Twitter: [@blessed_ricky](https://twitter.com/blessedricky)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/richardoppiyo)
+
+👤 **Leonardo Pires Goss**
+
+- GitHub: [@leopiresgoss](https://github.com/leopiresgoss)
+- Twitter: [@leopiresgoss](https://twitter.com/leonardopgoss)
+- [LinkedIn](https://www.linkedin.com/in/leonardogoss/)
+
