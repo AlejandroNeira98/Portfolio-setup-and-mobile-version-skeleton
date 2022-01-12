@@ -13,10 +13,6 @@ Static page made from scratch based on the Figma templates provided by Microvers
  
 ![imagen](https://user-images.githubusercontent.com/93448210/148102496-ed20c529-bf6b-4eee-8b5c-1cf9f1cb4bdd.png)
 
-## Live Demo
-
-[Live Demo Link](https://alejandroneira98.github.io/Portfolio-setup-and-mobile-version-skeleton/)
-
 ## Author
 
 👤 **Alejandro Neira**
@@ -32,4 +28,18 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse Linters, Instructions & Templates
+
+## Contributors 
+
+👤 **Richard Opiyo**
+
+- GitHub: [@richardoppiyo](https://github.com/richardopiyo)
+- Twitter: [@blessed_ricky](https://twitter.com/blessedricky)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/richardoppiyo)
+
+👤 **Leonardo Pires Goss**
+
+- GitHub: [@leopiresgoss](https://github.com/leopiresgoss)
+- Twitter: [@leopiresgoss](https://twitter.com/leonardopgoss)
+- [LinkedIn](https://www.linkedin.com/in/leonardogoss/)
 
