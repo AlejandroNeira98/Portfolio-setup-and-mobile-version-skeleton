@@ -14,7 +14,7 @@ body {
 
 header {
   background: #3c3a39;
-  margin: 0%;
+  margin: 0;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -119,16 +119,16 @@ h1 {
   font-style: normal;
   font-weight: normal;
   color: #fff;
-  margin-bottom: 0%;
+  margin-bottom: 0;
 }
 
 .Social-container {
   list-style-type: none;
   display: flex;
   width: 100px;
-  padding-left: 0%;
+  padding-left: 0;
   margin-left: 22px;
-  margin-top: 0%;
+  margin-top: 0;
 }
 
 .Social-container li {
@@ -140,7 +140,7 @@ h1 {
     background-image: url("./Images/Illustration-header.png");
     background-position: 100%;
     background-size: 40%;
-    padding-left: 0%;
+    padding-left: 0;
   }
 
   .hey a p {
@@ -160,8 +160,8 @@ h1 {
   .hey > * > *,
   .hey > * {
     margin-left: 6%;
-    margin-bottom: 0%;
-    margin-top: 0%;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .hey h1 {
@@ -200,7 +200,7 @@ h1 {
 .recent {
   text-align: center;
   margin-top: 120px;
-  margin-bottom: 0%;
+  margin-bottom: 0;
   font-size: 40px;
   font-family: 'Crete Round', serif;
   font-weight: normal;
@@ -226,7 +226,7 @@ h1 {
 .boxes {
   display: flex;
   list-style-type: none;
-  padding-left: 0%;
+  padding-left: 0;
 }
 
 .boxes li {
@@ -322,12 +322,12 @@ h1 {
 
   .repeated {
     max-width: 100%;
-    margin-bottom: 0%;
+    margin-bottom: 0;
     justify-content: flex-end;
   }
 
   .repeated h2 {
-    margin-bottom: 0%;
+    margin-bottom: 0;
   }
 
   .repeated .button {
@@ -392,7 +392,7 @@ h1 {
   }
 }
 
-/* ---------- Here is the about me page -------*/
+/* ---------- Here is the about me page ------- */
 
 .aboutme {
   background-image: url("./Images/Group.png");
@@ -403,7 +403,7 @@ h1 {
   margin-bottom: 0%;
 }
 
-.aboutme > *{
+.aboutme > * {
   margin-left: 24px;
 }
 
@@ -574,7 +574,8 @@ form {
 #Social-f {
   margin-bottom: 23px;
   padding-bottom: 2%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
