@@ -108,11 +108,15 @@ h1 {
   color: #fff5e1;
 }
 
+/* about me part for linters */
+
 .aboutme p {
   color: #f4f5f7;
   font-family: 'Inter', sans-serif;
   margin-bottom: 24px;
 }
+
+/* .Repeated class of works for linters */
 
 .repeated p {
   color: white;
@@ -127,6 +131,11 @@ h1 {
 .repeated p,
 .repeated ul {
   margin-left: 16px;
+}
+
+.multi p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
 }
 
 .hey a p {
@@ -227,11 +236,6 @@ h1 {
   font-size: 32px;
 }
 
-.multi p {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-}
-
 .articles > * {
   grid-column: 2;
   display: flex;
@@ -274,7 +278,7 @@ h1 {
   font-size: 32px;
   font-style: normal;
   font-weight: normal;
-  margin-top: 84px
+  margin-top: 84px;
 }
 
 .button {
