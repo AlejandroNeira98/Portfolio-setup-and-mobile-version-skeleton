@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-  margin-right: 0%;
-  margin-left: 0%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  padding-right: 0%;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
   background-color: #1c1a19;
 }
 
@@ -79,7 +79,7 @@ button {
   }
 }
 
-/*----------------Here is the presentation part----------*/
+/* ----------------Here is the presentation part---------- */
 
 .hey {
   background-image: url("./Images/Illustration.png");
@@ -106,6 +106,12 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
+}
+
+.aboutme p {
+  color: #f4f5f7;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
 }
 
 .hey a p {
@@ -142,14 +148,13 @@ h1 {
     font-size: 1.5vw;
   }
 
-  
   .hey .Social-container {
-   grid-column: 1;
-   display: block;
-   position: absolute;
-   left: 0px;
-   margin-left: 2%;
-   top: 15rem;
+    grid-column: 1;
+    display: block;
+    position: absolute;
+    left: 0px;
+    margin-left: 2%;
+    top: 15rem;
   }
 
   .hey > * > *,
@@ -172,7 +177,7 @@ h1 {
   .hey .Social-container img {
     max-width: 1.5vw;
   }
-  
+
   .hey .Social-container > * {
     margin-top: 5%;
   }
@@ -410,20 +415,14 @@ h1 {
   font-weight: normal;
 }
 
-.aboutme p {
-  color: #f4f5f7;
-  font-family: 'Inter', sans-serif;
-  margin-bottom: 24px;
-}
-
- #second-hr {
+#second-hr {
   color: white;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 137px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px){
+@media (min-width: 992px) and (max-width: 1100px) {
   .aboutme {
     margin-left: 6%;
     background-image: url("./Images/Frame.png");
@@ -452,7 +451,7 @@ h1 {
   }
 }
 
-/*--------HERE IS THE LIST OF LANGUAGES--------*/
+/* --------HERE IS THE LIST OF LANGUAGES-------- */
 
 .list {
   background-color: #1c1a19;
@@ -471,7 +470,7 @@ h1 {
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 44px;
-} 
+}
 
 .listsub {
   font-family: 'Inter', sans-serif;
@@ -481,35 +480,34 @@ h1 {
   margin-bottom: 44px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px){
-   .list {
-     display: grid;
-     grid-template-columns: 0.1% 29% 29% auto;
-     grid-template-rows: 1;
-     grid-template-areas: ". l f s";
-     column-gap: 5%;
-   }
+@media (min-width: 992px) and (max-width: 1100px) {
+  .list {
+    display: grid;
+    grid-template-columns: 0.1% 29% 29% auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". l f s";
+    column-gap: 5%;
+  }
 
-   .languages {
-     grid-area: l;
-   }
+  .languages {
+    grid-area: l;
+  }
 
-   .Frameworks{
-     grid-area: f;
-   }
+  .Frameworks {
+    grid-area: f;
+  }
 
-   .Skills {
-     grid-area: s;
-   }
+  .Skills {
+    grid-area: s;
+  }
 
-   .list ul {
-     text-align: left;
-     padding-left: 0%;
-   }
-   
+  .list ul {
+    text-align: left;
+    padding-left: 0%;
+  }
 }
 
-/*-----HERE IS THE CONTACT FORM------------*/
+/* -----HERE IS THE CONTACT FORM------------ */
 
 form {
   border-bottom: 1px solid #dfe1e6;
@@ -573,13 +571,10 @@ form {
   width: 131px;
 }
 
-#Social-f{
+#Social-f {
   margin-bottom: 23px;
   padding-bottom: 2%;
-}
-
-#Social-f {
- margin: auto;
+  margin: auto;
 }
 
 footer {
@@ -600,8 +595,7 @@ footer hr {
   margin: auto;
 }
 
-@media (min-width: 992px) and (max-width: 1100px){
-  
+@media (min-width: 992px) and (max-width: 1100px) {
   .contact-form {
     display: flex;
   }
@@ -616,7 +610,7 @@ footer hr {
   fieldset {
     width: 94%;
   }
-  
+
   .contact-form .contact-me {
     align-self: flex-start;
     margin-left: 1%;
@@ -651,5 +645,4 @@ footer hr {
   #message {
     height: auto;
   }
-  
 }
