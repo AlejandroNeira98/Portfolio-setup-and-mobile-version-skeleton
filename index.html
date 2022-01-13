@@ -53,9 +53,9 @@
 
         <div class="img-multi"></div>
 
-            <img src="Images/GymFit.png" alt="GymFit">
+            <img id="GymFit" src="Images/GymFit.png" alt="GymFit">
 
-            <article class="multi">
+            <article class="multi" id="multi">
                 <h2 id="Multi">Multi-Post Stories</h2>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
                 <ul class="boxes white">
@@ -148,34 +148,46 @@
 <!------------------Here is the LIST OF LANGUAGES--------------------------->
         <section class="list">
             
-            <ul>
-                <li><img src="./Images/Rectangle55.png" alt="rectangle"> Language</li>
-                <li><ul>
-                    <li><p class="listsub">Javascript</p></li>
-                    <li><p class="listsub">Ruby</p></li>
-                    <li><p class="listsub">Html</p></li>
-                    <li><p class="listsub">Css</p></li>
-                </ul></li>
+            <!-- <ul> -->
+                <ul class="languages">
+                    <li ><img src="./Images/Rectangle55.png" alt="rectangle"> Language</li>
+                    <li>
+                        <ul>
+                            <li><p class="listsub">Javascript</p></li>
+                            <li><p class="listsub">Ruby</p></li>
+                            <li><p class="listsub">Html</p></li>
+                            <li><p class="listsub">Css</p></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <li><img src="./Images/Rectangle56.png" alt="rectangle"> Frameworks</li>
-                <li><ul>
-                    <li><p class="listsub">Bootstrap</p></li>
-                    <li><p class="listsub">Ruby on Rails</p></li>
-                    <li><p class="listsub">RSPec</p></li>
-                    <li><p class="listsub">CapyBara</p></li>
-                    <li><p class="listsub">Selenium</p></li>
-                </ul></li>
+                <ul class="Frameworks">
+                    <li><img src="./Images/Rectangle56.png" alt="rectangle"> Frameworks</li>
+                    <li >
+                        <ul>
+                            <li><p class="listsub">Bootstrap</p></li>
+                            <li><p class="listsub">Ruby on Rails</p></li>
+                            <li><p class="listsub">RSPec</p></li>
+                            <li><p class="listsub">CapyBara</p></li>
+                            <li><p class="listsub">Selenium</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <ul class="Skills">
+                    <li><img src="./Images/Circle.png" alt=""> Skills</li>
+                    <li>
+                        <ul>
+                            <li><p class="listsub">Codekit</p></li>
+                            <li><p class="listsub">Githubt</p></li>
+                            <li><p class="listsub">Codepen</p></li>
+                            <li><p class="listsub">Gitlab</p></li>
+                            <li><p class="listsub">Terminal</p></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <li><img src="./Images/Circle.png" alt=""> Skills</li>
-                <li><ul>
-                    <li><p class="listsub">Codekit</p></li>
-                    <li><p class="listsub">Githubt</p></li>
-                    <li><p class="listsub">Codepen</p></li>
-                    <li><p class="listsub">Gitlab</p></li>
-                    <li><p class="listsub">Terminal</p></li>
-                </ul></li>
-
-            </ul>
+            <!-- </ul> -->
         </section>
   
 <!-------------------------Here is the CONTACT FORM------------------------>
@@ -192,7 +204,8 @@
         </fieldset>
         <button class="contact-me button" type="submit" >Get in touch</button>
       </form>
-      <footer>
+    </section>     
+    <footer>
         <ul class="Social-container" id="Social-f">
             <li><a href="https://github.com"><img class="Gato" src="./Images/github.png" alt="GitHub"></a></li>
             <li><a href="https://linkedin.com"><img class="LinkedIn" src="Images/Linkedin.png" alt="LinkedIn"></a></li>
@@ -201,7 +214,6 @@
             <li><a href="https://medium.com"><img class="M" src="Images/medium.png" alt="M"></a></li>
         </ul> 
         <hr>
-      </footer> 
-    </section>      
+    </footer>  
 </body>
 </html>
