@@ -301,10 +301,9 @@ h1 {
     padding-bottom: 8%;
   }
 
-  #first-hr {
-    align-self: flex-end;
-    margin-left: 30%;
-    margin-bottom: 10%;
+  .multi,
+  #GymFit {
+    margin-top: 8%;
   }
 
   .articles {
@@ -314,7 +313,7 @@ h1 {
     row-gap: 1.6%;
     column-gap: 1.6%;
     grid-template-areas:
-      ". top top top ."
+      ". recent top top ."
       ". multi multi multi ."
       ". one two three ."
       ". four five six .";
@@ -335,9 +334,16 @@ h1 {
     display: none;
   }
 
-  #first-hr,
   .recent {
+    grid-area: recent;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  #first-hr {
     grid-area: top;
+    margin: auto 0;
+    align-self: center;
   }
 
   #GymFit {
@@ -348,10 +354,6 @@ h1 {
   #multi {
     margin-left: 58%;
     grid-area: multi;
-  }
-
-  #Multi {
-    margin-top: 0%;
   }
 
   #one {
@@ -445,11 +447,6 @@ h1 {
     font-size: 97%;
     max-width: 45%;
   }
-
-  #second-hr {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
 }
 
 /* --------HERE IS THE LIST OF LANGUAGES-------- */
@@ -485,8 +482,10 @@ h1 {
   .list {
     display: grid;
     grid-template-columns: 0.1% 29% 29% auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". l f s";
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    ". hr hr hr"
+    ". l f s";
     column-gap: 5%;
   }
 
@@ -500,6 +499,12 @@ h1 {
 
   .Skills {
     grid-area: s;
+  }
+
+  #second-hr {
+    margin-right: 6%;
+    margin-left: 0;
+    grid-area: hr;
   }
 
   .list ul {
@@ -606,7 +611,8 @@ footer hr {
     border-bottom: none;
     margin-top: 10%;
     margin-bottom: auto;
-    width: 100%;
+    margin-left: 5%;
+    width: 95%;
   }
 
   fieldset {
