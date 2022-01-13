@@ -114,6 +114,21 @@ h1 {
   margin-bottom: 24px;
 }
 
+.repeated p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+.repeated h2,
+.repeated p,
+.repeated ul {
+  margin-left: 16px;
+}
+
 .hey a p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -182,6 +197,7 @@ h1 {
     margin-top: 5%;
   }
 }
+
 /* --------------HERE STARTS MY RECENT WORKS------------------- */
 
 .articles {
@@ -252,12 +268,6 @@ h1 {
   margin-bottom: 24px;
 }
 
-.repeated h2,
-.repeated p,
-.repeated ul {
-  margin-left: 16px;
-}
-
 .repeated h2 {
   color: white;
   font-family: 'Crete Round', serif;
@@ -265,15 +275,6 @@ h1 {
   font-style: normal;
   font-weight: normal;
   margin-top: 84px
-}
-
-.repeated p {
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  margin-right: 16px;
 }
 
 .button {
