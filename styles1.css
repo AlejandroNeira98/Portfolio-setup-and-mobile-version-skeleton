@@ -3,52 +3,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+body {
+  margin-right: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: #1c1a19;
+}
+
 header {
   background: #3c3a39;
-  padding: 0%;
   margin: 0%;
-  left: 1px;
-  top: 1px;
-  right: 1px;
-  position: absolute;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
+  height: 40px;
 }
 
 header a {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #fff;
-  margin-left: 1.5rem;
+  margin-left: 6%;
+  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-icon {
+  align-self: flex-end;
+  margin-right: 6%;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .menu-icon img {
-  margin-right: 1.5rem;
-  padding-top: 0.4rem;
-  width: 1.2rem;
-  height: 0.8rem;
+  width: 16px;
+  height: 12px;
 }
 
-.menu-icon:hover {
+.menu-icon:hover,
+button {
   cursor: pointer;
 }
 
-body {
-  background-image: url("./Images/Illustration.png");
-  background-position: bottom right;
-  height: 550px;
-  background-repeat: no-repeat;
-  background-color: #1c1a19;
-  margin: 0%;
+.desktop {
+  display: none;
 }
 
-main {
-  margin-left: 24px;
+@media (min-width: 992px) and (max-width: 1100px) {
+  #menu {
+    display: none;
+  }
+  .menu-icon,
+  .d-menu {
+    display: flex;
+    margin-left: 38px;
+  }
+
+  #mail {
+    min-width: 22px;
+    min-height: 18px;
+  }
+}
+
+/*----------------Here is the presentation part----------*/
+
+.hey {
+  background-image: url("./Images/Illustration.png");
+  background-position: 100% 115%;
+  background-repeat: no-repeat;
+  background-color: #1c1a19;
+  padding: 0px 24px;
+  padding-bottom: 130px;
 }
 
 h1 {
@@ -59,62 +87,83 @@ h1 {
   width: 327px;
   height: 124px;
   left: 24px;
-  margin-top: 10rem;
+  margin-top: 0px;
+  padding-top: 120px ;
 }
 
-main h2 {
+.hey h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #fff5e1;
 }
 
-main a {
+.hey a p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   color: #fff;
+  margin-bottom: 0%;
 }
 
 .Social-container {
   list-style-type: none;
   display: flex;
   width: 100px;
-  justify-content: space-between;
-  align-items: center;
+  padding-left: 0%;
+  margin-left: 22px;
+  margin-top: 0%;
 }
 
-.Social-container:hover {
-  cursor: pointer;
+.Social-container li {
+  margin: 22px 22px 0px 0px;
 }
 
-.Gato {
-  width: 16px;
-  height: 16px;
-  margin-right: 9px;
-}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .hey {
+    background-image: url("./Images/Illustration-header.png");
+    background-position: 100%;
+    background-size: 40%;
+    padding-left: 0%;
+  }
 
-.LinkedIn,
-.Peace,
-.Twitter,
-.M {
-  width: 33px;
-  height: 33px;
-}
+  .hey a p {
+    max-width: 50%;
+  }
 
-.Works {
+  
+  .Social-container {
+   grid-column: 1;
+   display: block;
+  }
+
+  .hey > * > *,
+  .hey > * {
+    margin-left: 6%;
+  }
+
+}
+/*--------------HERE STARTS MY RECENT WORKS-------------------*/
+
+.articles {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 24px auto 24px;
   background-color: #fff;
   padding-bottom: 120px;
+  row-gap: 24px;
 }
 
-.Works article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 24px;
-  margin-right: 24px;
-  max-width: 327px;
+#first-hr {
+  margin: 24px 24px;
+  border: 1px solid #212121; 
+}
+
+.recent {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 0%;
+  font-size: 40px;
+  font-family: 'Crete Round', serif;
+  font-weight: normal;
 }
 
 #Multi {
@@ -122,50 +171,52 @@ main a {
   font-size: 32px;
 }
 
-.First {
-  border-bottom: solid black;
-  padding-bottom: 2rem;
-  width: 320px;
-  text-align: center;
-  margin-bottom: 80px;
-  margin-top: 120px;
-  font-size: 40px;
-  font-family: 'Crete Round', serif;
-  font-weight: normal;
+.multi p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: light;
+}
+
+.articles > * {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .boxes {
   display: flex;
   list-style-type: none;
-  padding-left: 0.001%;
+  padding-left: 0%;
 }
 
-.boxes > * {
+.boxes li {
   margin-right: 12px;
   padding: 10px 12px 10px 12px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  max-width: 100%;
 }
 
 .white > * {
   border: 1px solid #8993a4;
 }
 
-.Project {
-  background: #ff6b00;
-  font-family: 'Inter', sans-serif;
-  padding: 12px 12px 12px 12px;
+.black > * {
   color: white;
-  margin-top: 12px;
-  border: none;
-  font-size: 17px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .repeated {
   background-image: url("./Images/Fondo_articles.png");
-  margin-top: 24px;
-  height: 380px;
+  max-width: 327px;
+  height: 386px;
+  margin-bottom: 24px;
+}
+
+.repeated h2,
+.repeated p,
+.repeated ul {
+  margin-left: 16px;
 }
 
 .repeated h2 {
@@ -174,7 +225,7 @@ main a {
   font-size: 32px;
   font-style: normal;
   font-weight: normal;
-  margin: 84px 16px 12px 16px;
+  margin-top: 84px
 }
 
 .repeated p {
@@ -183,78 +234,78 @@ main a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  margin-left: 16px;
   margin-right: 16px;
 }
 
-.black {
-  margin-left: 16px;
-}
-
-.black > * {
-  color: white;
+.button {
+  background: #ff6b00;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  padding: 10px 12px 10px 12px;
-  margin-right: 12px;
-  background: rgba(255, 255, 255, 0.24);
+  padding: 12px 12px;
+  color: white;
+  border: none;
+  font-size: 17px;
 }
 
-button:hover {
-  cursor: pointer;
+#project1 {
+  max-width: 124px;
 }
 
-.repeated .Project {
-  width: 100%;
-  text-align: center;
+@media (min-width: 992px) and (max-width: 1100px){
+  #first-hr,
+  .recent {
+    grid-row: 1;
+  }
+  .recent {
+    max-width: fit-content;
+  }
+
+  #first-hr {
+    height: 1px;
+    align-self: flex-end;
+  }
 }
+
+/* ---------- Here is the about me page -------*/
 
 .aboutme {
   background-image: url("./Images/Group.png");
-  background-position: bottom right;
-  height: 550px;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
+  background-color: #1c1a19;
+  height: 652px;
+  margin-bottom: 0%;
+}
+
+.aboutme > *{
+  margin-left: 24px;
 }
 
 .aboutme h2 {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
   font-size: 72px;
-  margin: 120px 24px 24px 24px;
+  padding-top: 120px;
   font-weight: normal;
 }
 
 .aboutme p {
   color: #f4f5f7;
   font-family: 'Inter', sans-serif;
-  margin: 0.1px 24px 24px 24px;
+  margin-bottom: 24px;
 }
 
-.aboutme button,
-.contact-me {
-  color: white;
-  padding: 12px 14px 12px 14px;
-  margin-left: 24px;
-  background-color: #ff6b00;
-  width: auto;
-  margin-bottom: 209px;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-hr {
+ #second-hr {
   color: white;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 137px;
 }
 
-footer ul {
-  margin: auto;
-  padding: 0%;
+/*--------HERE IS THE LIST OF LANGUAGES--------*/
+
+.list {
+  background-color: #1c1a19;
+  padding-bottom: 131px;
 }
 
 .list ul {
@@ -278,6 +329,8 @@ footer ul {
   margin-bottom: 44px;
 }
 
+/*-----HERE IS THE CONTACT FORM------------*/
+
 form {
   border-bottom: 1px solid #dfe1e6;
   padding-bottom: 124px;
@@ -286,7 +339,8 @@ form {
 .contact-form {
   background-color: white;
   width: 100%;
-  padding: 0 24px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .contact-form h2 {
@@ -297,7 +351,6 @@ form {
   line-height: 44px;
   text-align: center;
   padding-top: 120px;
-  padding-left: 24px;
 }
 
 .contact-form form,
@@ -350,51 +403,17 @@ form {
   margin-left: 41%;
 }
 
-@media only screen and (min-width: 992px) {
+#Social-f{
+  margin-bottom: 23px;
+}
 
-  .Works {
-    grid-template-columns: auto repeat(3/ 25%) auto;
-    grid-template-rows: 4;
-    column-gap: 1.6%;
-    row-gap: 2.3%;
-    padding-left: 9%;
-    padding-right: 9%;
-    max-width: 100%;
+#Social-f {
+ margin: auto;
+}
 
-  }
-
-  .repeated important! {
-    margin: 0px 0px;
-    width: 100%;
-  }
-
-  #one {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  #two {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  #three {
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-  #four {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  #five {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  #six {
-    grid-column: 3;
-    grid-row: 4;
-  }
+footer {
+  padding-bottom: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
