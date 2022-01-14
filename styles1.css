@@ -427,21 +427,26 @@ h1 {
     background-image: url("./Images/Frame.png");
     background-position: 100% 50%;
     background-size: 45%;
-    height: 30vh;
+    grid-template-rows: auto;
+    height: auto;
+    padding-bottom: 10%;
   }
 
   .aboutme > * {
     margin-left: 0%;
+    margin-top: 2%;
+    margin-bottom: 0;
   }
 
   .aboutme h2 {
     font-size: 350%;
-    padding-top: 8%;
+    padding-top: 10%;
   }
 
   .aboutme p {
     font-size: 97%;
     max-width: 45%;
+    margin-bottom: 0;
   }
 }
 
