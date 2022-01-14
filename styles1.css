@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  background-color: #1c1a19;
+}
+
+header {
+  background: #3c3a39;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 40px;
+}
+
+header a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 6%;
+  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-icon {
+  align-self: flex-end;
+  margin-right: 6%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.menu-icon img {
+  width: 16px;
+  height: 12px;
+}
+
+.menu-icon:hover,
+button {
+  cursor: pointer;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  #menu {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .menu-icon,
+  .d-menu {
+    display: flex;
+    margin-left: 38px;
+    text-decoration: none;
+  }
+
+  #mail {
+    min-width: 22px;
+    min-height: 18px;
+  }
+}
+
+/* ----------------Here is the presentation part---------- */
+
+.hey {
+  background-image: url("./Images/Illustration.png");
+  background-position: 100% 115%;
+  background-repeat: no-repeat;
+  background-color: #1c1a19;
+  padding: 0 24px;
+  padding-bottom: 130px;
+}
+
+h1 {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-size: 56px;
+  font-weight: lighter;
+  width: 327px;
+  height: 124px;
+  left: 24px;
+  margin-top: 0;
+  padding-top: 120px;
+}
+
+.hey h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #fff5e1;
+}
+
+/* about me part for linters */
+
+.aboutme p {
+  color: #f4f5f7;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
+}
+
+/* .Repeated class of works for linters */
+
+.repeated p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+.repeated h2,
+.repeated p,
+.repeated ul {
+  margin-left: 16px;
+}
+
+.multi p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.hey a p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.Social-container {
+  list-style-type: none;
+  display: flex;
+  width: 100px;
+  padding-left: 0;
+  margin-left: 22px;
+  margin-top: 0;
+}
+
+.Social-container li {
+  margin: 22px 22px 0 0;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .hey {
+    background-image: url("./Images/Illustration-header.png");
+    background-position: 100%;
+    background-size: 40%;
+    padding-left: 0;
+  }
+
+  .hey a p {
+    max-width: 50%;
+    font-size: 1.5vw;
+  }
+
+  .hey .Social-container {
+    grid-column: 1;
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-left: 2%;
+    top: 15rem;
+  }
+
+  .hey > * > *,
+  .hey > * {
+    margin-left: 6%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .hey h1 {
+    margin-bottom: 2.8vw;
+    font-size: 5.5vw;
+  }
+
+  .hey h2 {
+    font-size: 2.5vw;
+    padding-top: 1vw;
+  }
+
+  .hey .Social-container img {
+    max-width: 1.5vw;
+  }
+
+  .hey .Social-container > * {
+    margin-top: 5%;
+  }
+}
+
+/* --------------HERE STARTS MY RECENT WORKS------------------- */
+
+.articles {
+  display: grid;
+  grid-template-columns: 24px auto 24px;
+  background-color: #fff;
+  padding-bottom: 120px;
+  row-gap: 24px;
+}
+
+#first-hr {
+  margin: 24px 24px;
+  border: 1px solid #212121;
+}
+
+.recent {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-family: 'Crete Round', serif;
+  font-weight: normal;
+}
+
+#Multi {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+}
+
+.articles > * {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxes {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.boxes li {
+  margin-right: 12px;
+  padding: 10px 12px 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.white > * {
+  border: 1px solid #8993a4;
+}
+
+.black > * {
+  color: white;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.repeated {
+  background-image: url("./Images/Fondo_articles.png");
+  max-width: 327px;
+  height: 386px;
+  margin-bottom: 24px;
+}
+
+.repeated h2 {
+  color: white;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 84px;
+}
+
+.button {
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  padding: 12px 12px;
+  color: white;
+  border: none;
+  font-size: 17px;
+}
+
+#project1 {
+  max-width: 124px;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .recent {
+    font-size: 3.25vw;
+    margin-top: auto;
+    grid-area: recent;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .multi,
+  #GymFit {
+    margin-top: 8%;
+  }
+
+  .articles {
+    grid-template-columns: auto 29% 29% 29% auto;
+    background-color: #fff;
+    padding-bottom: 120px;
+    row-gap: 1.6%;
+    column-gap: 1.6%;
+    grid-template-areas:
+      ". recent top top ."
+      ". multi multi multi ."
+      ". one two three ."
+      ". four five six .";
+    padding-top: 10%;
+  }
+
+  .repeated {
+    max-width: 100%;
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+
+  .repeated h2 {
+    margin-bottom: 0;
+  }
+
+  .repeated .button {
+    display: none;
+  }
+
+  #first-hr {
+    grid-area: top;
+    margin: auto 0;
+    align-self: center;
+  }
+
+  #GymFit {
+    width: 55%;
+    grid-area: multi;
+  }
+
+  #multi {
+    margin-left: 58%;
+    grid-area: multi;
+  }
+
+  #one {
+    grid-area: one;
+    background-image: url("./Images/Img-one.png");
+    border: 1px solid black;
+  }
+
+  #one > * {
+    display: none;
+  }
+
+  #one .button {
+    display: block;
+  }
+
+  #two {
+    grid-area: two;
+    background-image: url("./Images/Img-two-five.png");
+  }
+
+  #three {
+    grid-area: three;
+    background-image: url("./Images/Img-three-six.png");
+  }
+
+  #four {
+    grid-area: four;
+  }
+
+  #five {
+    grid-area: five;
+    background-image: url("./Images/Img-two-five.png");
+  }
+
+  #six {
+    grid-area: six;
+    background-image: url("./Images/Img-three-six.png");
+  }
+}
+
+/* ---------- Here is the about me page ------- */
+
+.aboutme {
+  background-image: url("./Images/Group.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #1c1a19;
+  height: 652px;
+  margin-bottom: 0%;
+}
+
+.aboutme > * {
+  margin-left: 24px;
+}
+
+.aboutme h2 {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  padding-top: 120px;
+  font-weight: normal;
+}
+
+#second-hr {
+  color: white;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 137px;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .aboutme {
+    margin-left: 6%;
+    background-image: url("./Images/Frame.png");
+    background-position: 100% 50%;
+    background-size: 45%;
+    grid-template-rows: auto;
+    height: auto;
+    padding-bottom: 10%;
+  }
+
+  .aboutme > * {
+    margin-left: 0%;
+    margin-top: 2%;
+    margin-bottom: 0;
+  }
+
+  .aboutme h2 {
+    font-size: 350%;
+    padding-top: 10%;
+  }
+
+  .aboutme p {
+    font-size: 97%;
+    max-width: 45%;
+    margin-bottom: 0;
+  }
+}
+
+/* --------HERE IS THE LIST OF LANGUAGES-------- */
+
+.list {
+  background-color: #1c1a19;
+  padding-bottom: 131px;
+}
+
+.list ul {
+  text-align: center;
+  list-style: none;
+  padding-left: 0%;
+}
+
+.list ul li {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 44px;
+}
+
+.listsub {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 44px;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .list {
+    display: grid;
+    grid-template-columns: 0.1% 29% 29% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      ". hr hr hr"
+      ". l f s";
+    column-gap: 5%;
+  }
+
+  .languages {
+    grid-area: l;
+  }
+
+  .Frameworks {
+    grid-area: f;
+  }
+
+  .Skills {
+    grid-area: s;
+  }
+
+  #second-hr {
+    margin-right: 6%;
+    margin-left: 0;
+    grid-area: hr;
+  }
+
+  .list ul {
+    text-align: left;
+    padding-left: 0%;
+  }
+}
+
+/* -----HERE IS THE CONTACT FORM------------ */
+
+form {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 124px;
+}
+
+.contact-form {
+  background-color: white;
+}
+
+.contact-form h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  padding-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contact-form form,
+.contact-form form > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-form form > * {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+#full-name,
+#email,
+#message {
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 15px 16px;
+  margin: 0 24px;
+}
+
+#message {
+  padding: 12px;
+  height: 114px;
+  background-color: #fbf8f7;
+}
+
+.contact-form .contact-me {
+  padding: 12px;
+  margin: 0;
+  width: 131px;
+}
+
+#Social-f {
+  margin-bottom: 23px;
+  padding-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  padding-bottom: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: auto;
+}
+
+footer hr {
+  height: 5px;
+  width: 134px;
+  top: 21px;
+  border-radius: 10px;
+  background: #0d151e;
+  margin: auto;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .contact-form {
+    display: flex;
+  }
+
+  form {
+    border-bottom: none;
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-left: 5%;
+    width: 95%;
+  }
+
+  fieldset {
+    width: 94%;
+  }
+
+  .contact-form .contact-me {
+    align-self: flex-start;
+    margin-left: 1%;
+    font-size: 66%;
+    padding: 1vw 1vw;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  .contact-form h2 {
+    text-align: left;
+    font-size: 174%;
+    margin-right: 0%;
+    margin-left: 6%;
+    margin-top: 0%;
+    max-width: 33%;
+    padding-top: 10%;
+  }
+
+  #full-name,
+  #email,
+  #message {
+    align-self: flex-start;
+    margin-left: 0%;
+    width: 90%;
+    padding: 2%;
+    font-size: 66%;
+  }
+
+  #message {
+    height: auto;
+  }
+}
