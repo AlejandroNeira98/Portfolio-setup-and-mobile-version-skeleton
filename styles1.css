@@ -298,7 +298,10 @@ h1 {
   .recent {
     font-size: 3.25vw;
     margin-top: auto;
-    padding-bottom: 8%;
+    grid-area: recent;
+    width: 100%;
+    padding-bottom: 0;
+    
   }
 
   .multi,
@@ -332,12 +335,6 @@ h1 {
 
   .repeated .button {
     display: none;
-  }
-
-  .recent {
-    grid-area: recent;
-    width: 100%;
-    padding-bottom: 0;
   }
 
   #first-hr {
@@ -483,9 +480,9 @@ h1 {
     display: grid;
     grid-template-columns: 0.1% 29% 29% auto;
     grid-template-rows: auto auto;
-    grid-template-areas: 
-    ". hr hr hr"
-    ". l f s";
+    grid-template-areas:
+      ". hr hr hr"
+      ". l f s";
     column-gap: 5%;
   }
 
