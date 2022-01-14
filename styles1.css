@@ -207,9 +207,7 @@ h1 {
   }
 
   .recent,
-  #first-hr,
-  #multi,
-  #GymFit
+  #first-hr
    {
     animation-name: slidein;
     animation-duration: 2s;
@@ -305,7 +303,7 @@ h1 {
   color: white;
   border: none;
   font-size: 17px;
-  transition: background 2s, color 2s, font-size 3s;
+  transition: background 2s, color 2s, border 3s;
 }
 
 #project1 {
@@ -314,9 +312,9 @@ h1 {
 
 @media (min-width: 992px) and (max-width: 1100px) {
   .button:hover {
-    background: #d3d3d3;
+    background: white;
     color: #ff6b00;
-    font-size: 19px;
+    border: 1px solid black;
   }
 
   .recent {
