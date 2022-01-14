@@ -133,7 +133,7 @@ h1 {
   margin-left: 16px;
 }
 
-.multi p {
+ p {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
 }
@@ -206,21 +206,20 @@ h1 {
     margin-top: 5%;
   }
 
-  .multi,
-  #GymFit {
+  .recent,
+  #first-hr,
+  #multi,
+  #GymFit
+   {
     animation-name: slidein;
     animation-duration: 2s;
   }
 
   @keyframes slidein {
     from {
-      margin-left: 200%;
-      width: 400%;
-    }
-
-    to {
-      margin-left: 58%;
-      width: 100%;  
+      margin-left: 300%;
+      max-width: 100%;
+      color: white;
     }
   }
 }
@@ -328,7 +327,7 @@ h1 {
     padding-bottom: 0;
   }
 
-  .multi,
+  ,
   #GymFit {
     margin-top: 8%;
   }
