@@ -288,6 +288,7 @@ h1 {
   color: white;
   border: none;
   font-size: 17px;
+  transition: background 2s, color 2s, font-size 3s;
 }
 
 #project1 {
@@ -295,6 +296,12 @@ h1 {
 }
 
 @media (min-width: 992px) and (max-width: 1100px) {
+  .button:hover {
+    background: #d3d3d3;
+    color: #ff6b00;
+    font-size: 19px;
+  }
+
   .recent {
     font-size: 3.25vw;
     margin-top: auto;
