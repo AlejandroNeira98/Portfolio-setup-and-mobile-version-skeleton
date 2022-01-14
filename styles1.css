@@ -205,6 +205,24 @@ h1 {
   .hey .Social-container > * {
     margin-top: 5%;
   }
+
+  .multi,
+  #GymFit {
+    animation-name: slidein;
+    animation-duration: 2s;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 200%;
+      width: 400%;
+    }
+
+    to {
+      margin-left: 58%;
+      width: 100%;  
+    }
+  }
 }
 
 /* --------------HERE STARTS MY RECENT WORKS------------------- */
