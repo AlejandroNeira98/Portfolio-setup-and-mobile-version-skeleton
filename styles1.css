@@ -53,7 +53,7 @@ button {
   display: none;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   #menu {
     display: none;
   }
@@ -158,7 +158,15 @@ p {
   margin: 22px 22px 0 0;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
+  .repeated p {
+    font-size: 1.5vw;
+  }
+
+  .boxes li {
+    font-size: 1vw;
+  }
+
   .hey {
     background-image: url("./Images/Illustration-header.png");
     background-position: 100%;
@@ -189,7 +197,7 @@ p {
 
   .hey h1 {
     margin-bottom: 2.8vw;
-    font-size: 5.5vw;
+    font-size: 400%;
   }
 
   .hey h2 {
@@ -308,7 +316,11 @@ p {
   max-width: 124px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
+  p {
+    font-size: 1.5vw;
+  }
+
   .button:hover {
     background: white;
     color: #ff6b00;
@@ -437,7 +449,7 @@ p {
   margin-bottom: 137px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .aboutme {
     margin-left: 6%;
     background-image: url("./Images/Frame.png");
@@ -460,7 +472,7 @@ p {
   }
 
   .aboutme p {
-    font-size: 97%;
+    font-size: 1vw;
     max-width: 45%;
     margin-bottom: 0;
   }
@@ -495,7 +507,7 @@ p {
   margin-bottom: 44px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .list {
     display: grid;
     grid-template-columns: 0.1% 29% 29% auto;
@@ -619,7 +631,7 @@ footer hr {
   margin: auto;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .contact-form {
     display: flex;
   }
@@ -664,7 +676,7 @@ footer hr {
     margin-left: 0%;
     width: 90%;
     padding: 2%;
-    font-size: 66%;
+    font-size: 1vw;
   }
 
   #message {
