@@ -159,6 +159,12 @@ p {
 }
 
 @media (min-width: 992px) /* and (max-width: 1100px) */ {
+  .repeated p {
+    font-size: 1.5vw;
+  }
+  .boxes li {
+    font-size: 1vw;
+  }
   .hey {
     background-image: url("./Images/Illustration-header.png");
     background-position: 100%;
@@ -189,7 +195,7 @@ p {
 
   .hey h1 {
     margin-bottom: 2.8vw;
-    font-size: 5.5vw;
+    font-size: 400%;
   }
 
   .hey h2 {
@@ -309,6 +315,9 @@ p {
 }
 
 @media (min-width: 992px) /* and (max-width: 1100px) */ {
+  p {
+    font-size: 1.5vw;
+  }
   .button:hover {
     background: white;
     color: #ff6b00;
@@ -460,7 +469,7 @@ p {
   }
 
   .aboutme p {
-    font-size: 97%;
+    font-size: 1vw;
     max-width: 45%;
     margin-bottom: 0;
   }
@@ -664,7 +673,7 @@ footer hr {
     margin-left: 0%;
     width: 90%;
     padding: 2%;
-    font-size: 66%;
+    font-size: 1vw;
   }
 
   #message {
