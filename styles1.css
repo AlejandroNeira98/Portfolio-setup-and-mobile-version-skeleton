@@ -53,7 +53,7 @@ button {
   display: none;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   #menu {
     display: none;
   }
@@ -158,7 +158,7 @@ p {
   margin: 22px 22px 0 0;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .hey {
     background-image: url("./Images/Illustration-header.png");
     background-position: 100%;
@@ -308,7 +308,7 @@ p {
   max-width: 124px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .button:hover {
     background: white;
     color: #ff6b00;
@@ -437,7 +437,7 @@ p {
   margin-bottom: 137px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .aboutme {
     margin-left: 6%;
     background-image: url("./Images/Frame.png");
@@ -495,7 +495,7 @@ p {
   margin-bottom: 44px;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .list {
     display: grid;
     grid-template-columns: 0.1% 29% 29% auto;
@@ -619,7 +619,7 @@ footer hr {
   margin: auto;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) /* and (max-width: 1100px) */ {
   .contact-form {
     display: flex;
   }
