@@ -162,9 +162,11 @@ p {
   .repeated p {
     font-size: 1.5vw;
   }
+
   .boxes li {
     font-size: 1vw;
   }
+
   .hey {
     background-image: url("./Images/Illustration-header.png");
     background-position: 100%;
@@ -318,6 +320,7 @@ p {
   p {
     font-size: 1.5vw;
   }
+  
   .button:hover {
     background: white;
     color: #ff6b00;
