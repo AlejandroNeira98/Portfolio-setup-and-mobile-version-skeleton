@@ -109,6 +109,10 @@ h1 {
 }
 
 /* about me part for linters */
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
 
 .aboutme p {
   color: #f4f5f7;
@@ -131,11 +135,6 @@ h1 {
 .repeated p,
 .repeated ul {
   margin-left: 16px;
-}
-
-.multi p {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
 }
 
 .hey a p {
@@ -204,6 +203,20 @@ h1 {
 
   .hey .Social-container > * {
     margin-top: 5%;
+  }
+
+  .recent,
+  #first-hr {
+    animation-name: slidein;
+    animation-duration: 2s;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 300%;
+      max-width: 100%;
+      color: white;
+    }
   }
 }
 
@@ -288,6 +301,7 @@ h1 {
   color: white;
   border: none;
   font-size: 17px;
+  transition: background 2s, color 2s, border 3s;
 }
 
 #project1 {
@@ -295,6 +309,12 @@ h1 {
 }
 
 @media (min-width: 992px) and (max-width: 1100px) {
+  .button:hover {
+    background: white;
+    color: #ff6b00;
+    border: 1px solid black;
+  }
+
   .recent {
     font-size: 3.25vw;
     margin-top: auto;
@@ -303,9 +323,10 @@ h1 {
     padding-bottom: 0;
   }
 
-  .multi,
   #GymFit {
     margin-top: 8%;
+    width: 55%;
+    grid-area: multi;
   }
 
   .articles {
@@ -340,11 +361,6 @@ h1 {
     grid-area: top;
     margin: auto 0;
     align-self: center;
-  }
-
-  #GymFit {
-    width: 55%;
-    grid-area: multi;
   }
 
   #multi {
