@@ -131,7 +131,7 @@ p {
   margin-right: 16px;
 }
 
-.repeated h2,
+.repeated h3,
 .repeated p,
 .repeated ul {
   margin-left: 16px;
@@ -293,7 +293,7 @@ p {
   margin-bottom: 24px;
 }
 
-.repeated h2 {
+.repeated h3 {
   color: white;
   font-family: 'Crete Round', serif;
   font-size: 32px;
@@ -303,7 +303,7 @@ p {
 }
 
 .button {
-  background: #ff6b00;
+  background: #944004;
   font-family: 'Inter', sans-serif;
   padding: 12px 12px;
   color: white;
@@ -361,7 +361,7 @@ p {
     justify-content: flex-end;
   }
 
-  .repeated h2 {
+  .repeated h3 {
     margin-bottom: 0;
   }
 
