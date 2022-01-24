@@ -38,12 +38,12 @@ header a {
   margin-bottom: auto;
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
 }
 
 .mobile-menu i {
@@ -64,21 +64,20 @@ header a {
   margin-right: 40px;
 }
 
-.mobile-menu ul li {
+.mobile-menu ul > * {
   padding: 20px;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .mobile-menu ul li a {
   text-decoration: none;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 .menu-icon {
