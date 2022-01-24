@@ -33,11 +33,11 @@ header a {
 }
 
 .mobile-menu{
+  display: none;
   height: 100vh;
   width: 100vw;
   position: absolute;
   background-color: #3C3A39;
-  border: 1px solid red;
 }
 
 .mobile-menu i {
