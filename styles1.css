@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+  min-width: 100vw;
+  position: absolute;
+}
+
 body {
   margin-right: 0;
   margin-left: 0;
@@ -10,6 +15,7 @@ body {
   margin-bottom: 0;
   padding-right: 0;
   background-color: #1c1a19;
+  min-width: 100%;
 }
 
 header {
