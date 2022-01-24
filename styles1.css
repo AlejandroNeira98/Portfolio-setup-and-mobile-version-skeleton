@@ -64,7 +64,7 @@ header a {
   margin-right: 40px;
 }
 
-.mobile-menu ul > * {
+.mobile-menu #mobile-menu li {
   padding: 20px;
   border-bottom: 1px solid #6f6c6b;
 }

@@ -7,11 +7,11 @@ const mobileMenuItems3 = document.querySelector('.mobile-menu-item3');
 
 function showMenue(e) {
   e.preventDefault();
-  mobileMenu.style.display ='block';
+  mobileMenu.style.display = 'block';
 }
 
 function hideMenu() {
-  mobileMenu.style.display ='none';
+  mobileMenu.style.display = 'none';
 }
 
 menubtn.addEventListener('click', showMenue);
