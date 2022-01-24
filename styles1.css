@@ -3,11 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-html {
-  min-width: 100vw;
-  position: absolute;
-}
-
 body {
   margin-right: 0;
   margin-left: 0;
@@ -16,6 +11,11 @@ body {
   padding-right: 0;
   background-color: #1c1a19;
   min-width: 100%;
+}
+
+html {
+  min-width: 100vw;
+  position: absolute;
 }
 
 header {
@@ -64,7 +64,9 @@ header a {
   margin-right: 40px;
 }
 
-.mobile-menu #mobile-menu li {
+.mobile-menu #mobile-menu .mobile-menu-item1,
+.mobile-menu #mobile-menu .mobile-menu-item2,
+.mobile-menu #mobile-menu .mobile-menu-item1 {
   padding: 20px;
   border-bottom: 1px solid #6f6c6b;
 }
