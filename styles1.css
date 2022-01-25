@@ -281,7 +281,7 @@ p {
 /* --------------HERE STARTS MY RECENT WORKS------------------- */
 .popup {
   background-color: #fff;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   top: 0;
