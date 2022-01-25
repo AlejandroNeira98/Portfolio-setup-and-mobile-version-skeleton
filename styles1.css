@@ -279,6 +279,38 @@ p {
 }
 
 /* --------------HERE STARTS MY RECENT WORKS------------------- */
+.popup {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 5% 10%;
+  padding: 2%;
+}
+
+.img_description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup #title {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
+.popup #img {
+  flex: 1 1;
+}
+
+.popup #descriptioncontainer {
+  flex: 1 1;
+}
+
 
 .articles {
   display: grid;
