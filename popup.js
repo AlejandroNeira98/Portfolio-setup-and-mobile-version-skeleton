@@ -83,31 +83,29 @@ const articlesContainer = document.createElement('section');
 articlesContainer.classList.add('articles');
 articlesContainer.id = 'portfolio';
 
-let text= "";
+let text = '';
 
-projects.forEach(element => {
+projects.forEach(element => () {
   if (element === projects[0]) {
 
-  text += `
-  <h2 class="${projects[0].class1}">${projects[0].title1}</h2>
-  <hr id="first-hr">
+    text += `
+    <h2 class="${projects[0].class1}">${projects[0].title1}</h2>
+    <hr id="first-hr">
 
-  <img id="GymFit" src="${projects[0].img}" alt="GymFit">
+    <img id="GymFit" src="${projects[0].img}" alt="GymFit">
 
-  <article class="${projects[0].class}" id="${projects[0].id}">
-  <h2 id="${projects[0].idh2}">${projects[0].title}</h2>
-  <p>${projects[0].description}</p>
-  <ul class="boxes white">
-  <li>${projects[0].technologies[0]}</li>
-  <li>${projects[0].technologies[1]}</li>
-  <li>${projects[0].technologies[2]}</li>
-  <li>${projects[0].technologies[3]}</li>
-  </ul>
-  <button class="button" id="project1">See Project</button>
-  </article>`
-  }
-
-  else if ('title2' in element) {
+    <article class="${projects[0].class}" id="${projects[0].id}">
+    <h2 id="${projects[0].idh2}">${projects[0].title}</h2>
+    <p>${projects[0].description}</p>
+    <ul class="boxes white">
+    <li>${projects[0].technologies[0]}</li>
+    <li>${projects[0].technologies[1]}</li>
+    <li>${projects[0].technologies[2]}</li>
+    <li>${projects[0].technologies[3]}</li>
+    </ul>
+    <button class="button" id="project1">See Project</button>
+    </article>`;
+  } else if ('title2' in element) {
     text += `
     <article class="${element.class}" id="${element.id}">
     <h2 class="mobile">${element.title}</h2>
@@ -120,10 +118,9 @@ projects.forEach(element => {
     </ul>
     <button class="button">See Project</button>
     </article>
-   `}
-
-  else {
-    text +=`
+   `;
+  } else {
+    text += `
       <article class="${element.class}" id="${element.id}">
       <h2>${element.title}</h2>
       <p>${element.description}</p>
@@ -134,7 +131,7 @@ projects.forEach(element => {
       </ul>
       <button class="button">See Project</button>
       </article>
-  `
+  `;
   }
 });
 
@@ -156,9 +153,8 @@ function hideMenu() {
   projectWindow.style.display = 'none';
 }
 
-projects.forEach(element => {
-  const btn = document.querySelector('#' + element.id + ' .button');
-  console.log('#' + element.id + ' .button');
+projects.forEach(element => () {
+  const btn = document.querySelector(`#${element.id} .button`);
   btn.addEventListener('click', () => {
     showMenu(element.index);
   });
