@@ -1,83 +1,83 @@
 const projects = [
-	{
-		title1:'My Recent Works',
-		class1: 'recent',
-		img:'Images/GymFit.png',
-		id: 'multi',
-		class:'multi',
-		idh2:'Multi',
-		title: 'Multi-Post Stories',
-		description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-		technologies:['css', 'html', 'bootstrap', 'Ruby'],
-		firstButton: 'See Live',
-		secondButton: 'See Source',
-		index: 0,
-	},
-	{
-		id:'one',
-		title:'Profesional Art Printing Data',
-		description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-		technologies:['html', 'bootstrap', 'Ruby'],
-		firstButton: 'See Live',
-		secondButton: 'See Source',
-		index: 0,
-		class:'repeated',
-		
-	},
-	{
-		id:'two',
-		title:'Profesional Art Printing Data',
-		title2:'Data Dashboard <br> Healthcare',
-		description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-		technologies:['html', 'bootstrap', 'Ruby'],
-		firstButton: 'See Live',
-		secondButton: 'See Source',
-		index: 0,
-		class:'repeated',
-	},
-	{
-		id:'three',
-		title:'Profesional Art Printing Data',
-		title2:'Website Protfolio',
-		description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-		technologies:['html', 'bootstrap', 'Ruby'],
-		firstButton: 'See Live',
-		secondButton: 'See Source',
-		index: 0,
-		class:'repeated',
-	},
-	{
-		id:'four',
-		title:'Profesional Art Printing Data',
-		description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-		technologies:['html', 'bootstrap', 'Ruby'],
-		firstButton: 'See Live',
-		secondButton: 'See Source',
-		index: 0,
-		class:'repeated',
-	},
-	{
-		id:'five',
-		title:'Profesional Art Printing Data',
-		title2:'Data Dashboard <br> Healthcare',
-		description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-		technologies:['html', 'bootstrap', 'Ruby'],
-		firstButton: 'See Live',
-		secondButton: 'See Source',
-		index: 0,
-		class:'repeated',
-	},
-	{
-		id:'six',
-		title:'Profesional Art Printing Data',
-		title2:'Website Protfolio',
-		description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-		technologies:['html','bootstrap','Ruby'],
-		firstButton: 'See Live',
-		secondButton: 'See Source',
-		index: 0,
-		class:'repeated',
-	},
+  {
+    title1:'My Recent Works',
+    class1: 'recent',
+    img:'Images/GymFit.png',
+    id: 'multi',
+    class:'multi',
+    idh2:'Multi',
+    title: 'Multi-Post Stories',
+    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies:['css', 'html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    index: 0,
+  },
+  {
+    id:'one',
+    title:'Profesional Art Printing Data',
+    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies:['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    index: 0,
+    class:'repeated',
+    
+  },
+  {
+    id:'two',
+    title:'Profesional Art Printing Data',
+    title2:'Data Dashboard <br> Healthcare',
+    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies:['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    index: 0,
+    class:'repeated',
+  },
+  {
+    id:'three',
+    title:'Profesional Art Printing Data',
+    title2:'Website Protfolio',
+    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies:['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    index: 0,
+    class:'repeated',
+  },
+  {
+    id:'four',
+    title:'Profesional Art Printing Data',
+    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies:['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    index: 0,
+    class:'repeated',
+  },
+  {
+    id:'five',
+    title:'Profesional Art Printing Data',
+    title2:'Data Dashboard <br> Healthcare',
+    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies:['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    index: 0,
+    class:'repeated',
+  },
+  {
+    id:'six',
+    title:'Profesional Art Printing Data',
+    title2:'Website Protfolio',
+    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies:['html','bootstrap','Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    index: 0,
+    class:'repeated',
+  },
 ]
 
 
@@ -194,61 +194,61 @@ const button6 = document.querySelector('#six .button');
 const projectWindow = document.querySelector('.popup');
 
 function showMenu0(a) {
-	a.preventDefault();
-	projectWindow.style.display = 'flex';
-	projectWindow.querySelector('h2').innerText = projects[0].title;
-	projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[0].description;
+  a.preventDefault();
+  projectWindow.style.display = 'flex';
+  projectWindow.querySelector('h2').innerText = projects[0].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[0].description;
 }
 
 function showMenu1(a) {
-	a.preventDefault();
-	projectWindow.style.display = 'flex';
-	projectWindow.querySelector('h2').innerText = projects[1].title;
-	projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[1].description;
-	projectWindow.querySelector('#li4').remove;
+  a.preventDefault();
+  projectWindow.style.display = 'flex';
+  projectWindow.querySelector('h2').innerText = projects[1].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[1].description;
+  projectWindow.querySelector('#li4').remove;
 }
 
 function showMenu2(a) {
-	a.preventDefault();
-	projectWindow.style.display = 'flex';
-	projectWindow.querySelector('h2').innerText = projects[2].title;
-	projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[2].description;
-	projectWindow.querySelector('#li4').remove;
+  a.preventDefault();
+  projectWindow.style.display = 'flex';
+  projectWindow.querySelector('h2').innerText = projects[2].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[2].description;
+  projectWindow.querySelector('#li4').remove;
 }
 
 function showMenu3(a) {
-	a.preventDefault();
-	projectWindow.style.display = 'flex';
-	projectWindow.querySelector('h2').innerText = projects[3].title;
-	projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[3].description;
-	projectWindow.querySelector('#li4').remove;
+  a.preventDefault();
+  projectWindow.style.display = 'flex';
+  projectWindow.querySelector('h2').innerText = projects[3].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[3].description;
+  projectWindow.querySelector('#li4').remove;
 }
 
 function showMenu4(a) {
-	a.preventDefault();
-	projectWindow.style.display = 'flex';
-	projectWindow.querySelector('h2').innerText = projects[4].title;
-	projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[4].description;
-	projectWindow.querySelector('#li4').remove;
+  a.preventDefault();
+  projectWindow.style.display = 'flex';
+  projectWindow.querySelector('h2').innerText = projects[4].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[4].description;
+  projectWindow.querySelector('#li4').remove;
 }
 
 function showMenu5(a) {
-	a.preventDefault();
-	projectWindow.style.display = 'flex';
-	projectWindow.querySelector('h2').innerText = projects[5].title;
-	projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[5].description;
-	projectWindow.querySelector('#li4').remove;
+  a.preventDefault();
+  projectWindow.style.display = 'flex';
+  projectWindow.querySelector('h2').innerText = projects[5].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[5].description;
+  projectWindow.querySelector('#li4').remove;
 }
 
 function showMenu6(a) {
-	a.preventDefault();
-	projectWindow.style.display = 'flex';
-	projectWindow.querySelector('h2').innerText = projects[0].title;
-	projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[6].description;
+  a.preventDefault();
+  projectWindow.style.display = 'flex';
+  projectWindow.querySelector('h2').innerText = projects[0].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[6].description;
 }
 
 function hideMenu() {
-	projectWindow.style.display = 'none';
+  projectWindow.style.display = 'none';
 }
 
 closebutton.addEventListener('click', hideMenu);
