@@ -313,6 +313,11 @@ p {
   line-height: 24px;
 }
 
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
 .popup #title {
   display: flex;
   min-width: 100%;
