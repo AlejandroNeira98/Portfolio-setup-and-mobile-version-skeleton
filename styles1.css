@@ -308,8 +308,7 @@ p {
   align-items: baseline;
 }
 
-
-.popup #img img {
+.popup #img {
   flex: 1 1;
 }
 
@@ -331,8 +330,8 @@ p {
 
 #live,
 #source {
- font-size: 1.5vh;
- margin-bottom: 2%;
+  font-size: 1.5vh;
+  margin-bottom: 2%;
 }
 
 #live img,
