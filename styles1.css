@@ -292,12 +292,14 @@ p {
   opacity: 1;
   min-height: 90%;
 }
-  .popup .boxes white{
-    margin-top: 15%;
-    margin-left: 5%;
-  }
+
+.popup .boxes .white {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
 .img_description {
-  margin-top:10%;
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -316,7 +318,8 @@ p {
   justify-content: space-between;
   align-items: baseline;
 }
-.popup #title h2{
+
+.popup #title #popH2 {
   font-family: 'Roboto', sans-serif;
   font-size: 7vw;
 }
@@ -335,7 +338,7 @@ p {
 
 #descriptioncontainer .buttons {
   display: flex;
-  margin-top:5%;
+  margin-top: 5%;
   justify-content: center;
 }
 

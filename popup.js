@@ -81,13 +81,12 @@ const projects = [
 
 const articlesContainer = document.createElement('section');
 articlesContainer.classList.add('articles');
-articlesContainer.id = 'portfolio'
+articlesContainer.id = 'portfolio';
 
-let text="";
+let text= "";
 
 projects.forEach(element => {
-
-  if (element == projects[0]){
+  if (element === projects[0]) {
 
   text += `
   <h2 class="${projects[0].class1}">${projects[0].title1}</h2>
@@ -108,8 +107,8 @@ projects.forEach(element => {
   </article>`
   }
 
-  else if ('title2' in element){
-   text += `
+  else if ('title2' in element) {
+    text += `
     <article class="${element.class}" id="${element.id}">
     <h2 class="mobile">${element.title}</h2>
     <h2 class="desktop">${element.title2}</h2>
@@ -121,8 +120,7 @@ projects.forEach(element => {
     </ul>
     <button class="button">See Project</button>
     </article>
-   `
-  }
+   `}
 
   else {
     text +=`
@@ -138,29 +136,15 @@ projects.forEach(element => {
       </article>
   `
   }
-
-  
 });
 
 articlesContainer.innerHTML = text;
 
 document.body.insertBefore(articlesContainer, document.body.children[3]);
 
-projects.forEach(element=>{
-  const btn = document.querySelector('#'+element.id+' .button');
-  console.log('#'+element.id+' .button');
-  btn.addEventListener('click', () => {
-    showMenu(element.index);
-  });
-
-});
-
 const closebutton = document.querySelector('.popup #close');
 
-
 const projectWindow = document.querySelector('.popup');
-
-
 
 function showMenu(a) {
   projectWindow.style.display = 'flex';
@@ -168,9 +152,16 @@ function showMenu(a) {
   projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[a].description;
 }
 
-
 function hideMenu() {
   projectWindow.style.display = 'none';
 }
+
+projects.forEach(element => {
+  const btn = document.querySelector('#' + element.id + ' .button');
+  console.log('#' + element.id + ' .button');
+  btn.addEventListener('click', () => {
+    showMenu(element.index);
+  });
+});
 
 closebutton.addEventListener('click', hideMenu);
