@@ -19,7 +19,7 @@
 <!--------------------STARTS THE BODY OF THE DOCUMENT-------------------------->
 <body>
 
-<!----------------------HERE IS THE HEADER-------------------->
+    <!----------------------HERE IS THE HEADER-------------------->
     <header>
          <a>Jhon Neira</a>
          <nav class="menu-icon">
@@ -40,7 +40,7 @@
          </div>
     </header>
 
-<!----------------HERE IS THE PRESENTATION------------------------------->
+    <!----------------HERE IS THE PRESENTATION------------------------------->
     <main class="hey">
         <h1>
             Hey There. <br>
@@ -61,15 +61,18 @@
             <li><a href="https://medium.com"><img class="M" src="Images/medium.png" alt="M"></a></li>
         </ul> 
     </main>
-<!---------------------Here start my recent works-------------------------------->
+    <!---------------------Here start my recent works-------------------------------->
     <section class="popup">
        
-        <h2 id="title">Keeping track of hundreds  of components website <i><img src="./Images/Close-Icon.png" alt="close"></i></h2>
+        <div id='title'>
+        <h2>Keeping track of hundreds  of components website </h2><i id="close"><img src="./Images/Close-Icon.png" alt="close"></i>
+        </div>
+
         <ul class="boxes white">
             <li>css</li>
             <li>html</li>
             <li>bootstrap</li>
-            <li>Ruby</li>
+            <li id="li4">Ruby</li>
         </ul>
         <div class="img_description">
             <div id="img">
@@ -77,26 +80,19 @@
             </div>
             <div id="descriptioncontainer">
                 <p id="description">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                    
                 </p>
-                <button id="live" class="button">See Live <i><img src="./Images/Icon-see_live.svg" alt=""></i></button>
-                <button id="source" class="button">See Source <i><img src="./Images/GitHubB.png" alt=""></i></button>
+                <div class="buttons">
+                    <button id="live" class="button">See Live <i><img src="./Images/Icon-see_live.svg" alt=""></i></button>
+                    <button id="source" class="button">See Source <i><img src="./Images/GitHubB.png" alt=""></i></button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="articles" id="portfolio">
-       
-        <h2 class="recent">My Recent Works</h2>
-        <hr id="first-hr">
+    
 
-            <img id="GymFit" src="Images/GymFit.png" alt="GymFit">
-
-           
-
-    </section>
-
-<!-------------------Here starts ABOUT ME section-------------------------->
+    <!-------------------Here starts ABOUT ME section-------------------------->
 
     <section class="aboutme" id="about">
         <h2>About me</h2>
@@ -104,7 +100,7 @@
         <button class="button">Get my resume</button>
     </section>
     
-<!------------------Here is the LIST OF LANGUAGES--------------------------->
+    <!------------------Here is the LIST OF LANGUAGES--------------------------->
         <section class="list">
             
             <hr id="second-hr">
@@ -151,7 +147,7 @@
             <!-- </ul> -->
         </section>
   
-<!-------------------------Here is the CONTACT FORM------------------------>
+    <!-------------------------Here is the CONTACT FORM------------------------>
     <section class="contact-form" id="contact">
       <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
 

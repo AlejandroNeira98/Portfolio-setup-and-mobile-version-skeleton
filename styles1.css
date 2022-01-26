@@ -280,12 +280,11 @@ p {
 
 /* --------------HERE STARTS MY RECENT WORKS------------------- */
 .popup {
-  background-color: #fff;
   display: none;
+  background-color: #fff;
   flex-direction: column;
   position: fixed;
   top: 0;
-  bottom: 0;
   margin: 5% 10%;
   padding: 2%;
 }
@@ -295,22 +294,52 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-self: flex-end;
+}
+
+#description {
+  margin-top: 0;
 }
 
 .popup #title {
   display: flex;
   min-width: 100%;
   justify-content: space-between;
+  align-items: baseline;
 }
 
-.popup #img {
+
+.popup #img img {
   flex: 1 1;
 }
 
 .popup #descriptioncontainer {
   flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  justify-content: space-between;
 }
 
+#descriptioncontainer .buttons {
+  display: flex;
+}
+
+#source {
+  margin-left: 5%;
+}
+
+#live,
+#source {
+ font-size: 1.5vh;
+ margin-bottom: 2%;
+}
+
+#live img,
+#source img {
+  max-width: 15%;
+  max-height: 70%;
+}
 
 .articles {
   display: grid;
