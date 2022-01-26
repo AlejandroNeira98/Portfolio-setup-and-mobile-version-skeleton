@@ -291,6 +291,7 @@ p {
   border: 1px solid blue;
   opacity: 1;
   min-height: 90%;
+  max-height: 100%;
 }
 
 .popup .boxes .white {
@@ -321,7 +322,7 @@ p {
 
 .popup #title #popH2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 7vw;
+  font-size: 36px;
 }
 
 .popup #img {
@@ -455,7 +456,7 @@ p {
     flex-direction: column;
     position: fixed;
     top: 0;
-    margin: 5% 10%;
+    margin: 0 10%;
     padding: 2%;
     border: 1px solid blue;
   }

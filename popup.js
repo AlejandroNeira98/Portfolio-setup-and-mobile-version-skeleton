@@ -153,7 +153,7 @@ function hideMenu() {
   projectWindow.style.display = 'none';
 }
 
-projects.forEach(element => () {
+projects.forEach(element => {
   const btn = document.querySelector(`#${element.id} .button`);
   btn.addEventListener('click', () => {
     showMenu(element.index);
