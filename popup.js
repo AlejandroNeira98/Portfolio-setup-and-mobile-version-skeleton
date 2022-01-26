@@ -85,7 +85,7 @@ articlesContainer.id = 'portfolio';
 
 let text = '';
 
-projects.forEach(element => () {
+projects.forEach(element => {
   if (element === projects[0]) {
 
     text += `
