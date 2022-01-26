@@ -19,7 +19,7 @@
 <!--------------------STARTS THE BODY OF THE DOCUMENT-------------------------->
 <body>
 
-<!----------------------HERE IS THE HEADER-------------------->
+    <!----------------------HERE IS THE HEADER-------------------->
     <header>
          <a>Jhon Neira</a>
          <nav class="menu-icon">
@@ -40,7 +40,7 @@
          </div>
     </header>
 
-<!----------------HERE IS THE PRESENTATION------------------------------->
+    <!----------------HERE IS THE PRESENTATION------------------------------->
     <main class="hey">
         <h1>
             Hey There. <br>
@@ -61,102 +61,38 @@
             <li><a href="https://medium.com"><img class="M" src="Images/medium.png" alt="M"></a></li>
         </ul> 
     </main>
-<!---------------------Here start my recent works-------------------------------->
-
-    <section class="articles" id="portfolio">
+    <!---------------------Here start my recent works-------------------------------->
+    <section class="popup">
        
-        <h2 class="recent">My Recent Works</h2>
-        <hr id="first-hr">
+        <div id='title'>
+        <h2 id="popH2">Keeping track of hundreds  of components website </h2><i id="close"><img src="./Images/Close-Icon.png" alt="close"></i>
+        </div>
 
-            <img id="GymFit" src="Images/GymFit.png" alt="GymFit">
-
-            <article class="multi" id="multi">
-                <h2 id="Multi">Multi-Post Stories</h2>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <ul class="boxes white">
-                    <li>css</li>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button class="button" id="project1">See Project</button>
-            </article>
-
-        
-
-        <article class="repeated" id="one">
-            <h2>Profesional Art Printing Data</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <ul class="boxes black">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-            <button class="button">See Project</button>
-        </article>
-
-        <article class="repeated" id="two">
-            <h2 class="mobile">Profesional Art Printing Data</h2>
-            <h2 class="desktop">Data Dashboard <br> Healthcare</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <ul class="boxes black">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-            <button class="button">See Project</button>
-        </article>
-
-        <article class="repeated" id="three">
-            <h2 class="mobile">Profesional Art Printing Data</h2>
-            <h2 class="desktop">Website Protfolio </h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <ul class="boxes black">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-            <button class="button">See Project</button>
-        </article>
-
-        <article class="repeated" id="four">
-            <h2>Profesional Art Printing Data</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <ul class="boxes black">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-            <button class="button">See Project</button>
-        </article>
-
-        <article class="repeated" id="five">
-            <h2 class="mobile">Profesional Art Printing Data</h2>
-            <h2 class="desktop">Data Dashboard <br> Healthcare</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <ul class="boxes black">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-            <button class="button">See Project</button>
-        </article>
-
-        <article class="repeated" id="six">
-            <h2 class="mobile">Profesional Art Printing Data</h2>
-            <h2 class="desktop">Website Protfolio </h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <ul class="boxes black">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-                <button class="button">See Project</button>
-        </article>
-
+        <ul class="boxes white">
+            <li>css</li>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li id="li4">Ruby</li>
+        </ul>
+        <div class="img_description">
+            <div>
+                <img id="img" src="./Images/GymFit.png" alt="Lady Stretching">
+            </div>
+            <div id="descriptioncontainer">
+                <p id="description">
+                    
+                </p>
+                <div class="buttons">
+                    <button id="live" class="button">See Live <i><img src="./Images/Icon-see_live.svg" alt=""></i></button>
+                    <button id="source" class="button">See Source <i><img src="./Images/GitHubB.png" alt=""></i></button>
+                </div>
+            </div>
+        </div>
     </section>
 
-<!-------------------Here starts ABOUT ME section-------------------------->
+ 
+
+    <!-------------------Here starts ABOUT ME section-------------------------->
 
     <section class="aboutme" id="about">
         <h2>About me</h2>
@@ -164,7 +100,7 @@
         <button class="button">Get my resume</button>
     </section>
     
-<!------------------Here is the LIST OF LANGUAGES--------------------------->
+    <!------------------Here is the LIST OF LANGUAGES--------------------------->
         <section class="list">
             
             <hr id="second-hr">
@@ -211,7 +147,7 @@
             <!-- </ul> -->
         </section>
   
-<!-------------------------Here is the CONTACT FORM------------------------>
+    <!-------------------------Here is the CONTACT FORM------------------------>
     <section class="contact-form" id="contact">
       <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
 
@@ -237,5 +173,6 @@
         <hr>
     </footer>  
     <script src="menu.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>

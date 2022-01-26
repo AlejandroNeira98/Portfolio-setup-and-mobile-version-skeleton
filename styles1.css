@@ -279,6 +279,85 @@ p {
 }
 
 /* --------------HERE STARTS MY RECENT WORKS------------------- */
+.popup {
+  display: none;
+  background-color: #fff;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 1% 5% 5% 2%;
+  padding: 5%;
+  border: 1px solid blue;
+  opacity: 1;
+  min-height: 90%;
+  max-height: 100%;
+}
+
+.popup .boxes .white {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.img_description {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: flex-end;
+}
+
+#description {
+  margin-top: 5%;
+  line-height: 24px;
+}
+
+.popup #title {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.popup #title #popH2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+}
+
+.popup #img {
+  flex: 1 1;
+}
+
+.popup #descriptioncontainer {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  justify-content: center;
+}
+
+#descriptioncontainer .buttons {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+#source {
+  margin-left: 5%;
+}
+
+#live,
+#source {
+  font-size: 1.5vh;
+  margin-bottom: 2%;
+}
+
+#live img,
+#source img {
+  max-width: 15%;
+  max-height: 70%;
+}
 
 .articles {
   display: grid;
@@ -369,6 +448,17 @@ p {
 @media (min-width: 992px) /* and (max-width: 1100px) */ {
   p {
     font-size: 1.5vw;
+  }
+
+  .popup {
+    display: none;
+    background-color: #fff;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    margin: 0 10%;
+    padding: 2%;
+    border: 1px solid blue;
   }
 
   .button:hover {
