@@ -85,9 +85,8 @@ articlesContainer.id = 'portfolio';
 
 let text = '';
 
-projects.forEach(element => {
+projects.forEach((element) => {
   if (element === projects[0]) {
-
     text += `
     <h2 class="${projects[0].class1}">${projects[0].title1}</h2>
     <hr id="first-hr">
@@ -153,7 +152,7 @@ function hideMenu() {
   projectWindow.style.display = 'none';
 }
 
-projects.forEach(element => {
+projects.forEach((element) => {
   const btn = document.querySelector(`#${element.id} .button`);
   btn.addEventListener('click', () => {
     showMenu(element.index);
