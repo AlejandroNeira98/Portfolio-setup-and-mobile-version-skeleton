@@ -79,102 +79,68 @@ const projects = [
   },
 ];
 
-const articlesContainer = document.createElement('article');
+const articlesContainer = document.createElement('section');
+articlesContainer.classList.add('articles');
+articlesContainer.id = 'portfolio'
 
-articlesContainer.innerHTML = `
-<section class="articles" id="portfolio">
+let text="";
 
+projects.forEach(element => {
 
-<h2 class="${projects[0].class1}">${projects[0].title1}</h2>
-<hr id="first-hr">
+  if (element == projects[0]){
 
-<img id="GymFit" src="${projects[0].img}" alt="GymFit">
+  text += `
+  <h2 class="${projects[0].class1}">${projects[0].title1}</h2>
+  <hr id="first-hr">
 
-<article class="${projects[0].class}" id="${projects[0].id}">
-<h2 id="${projects[0].idh2}">${projects[0].title}</h2>
-<p>${projects[0].description}</p>
-<ul class="boxes white">
-<li>${projects[0].technologies[0]}</li>
-<li>${projects[0].technologies[1]}</li>
-<li>${projects[0].technologies[2]}</li>
-<li>${projects[0].technologies[3]}</li>
-</ul>
-<button class="button" id="project1">See Project</button>
-</article>
+  <img id="GymFit" src="${projects[0].img}" alt="GymFit">
 
+  <article class="${projects[0].class}" id="${projects[0].id}">
+  <h2 id="${projects[0].idh2}">${projects[0].title}</h2>
+  <p>${projects[0].description}</p>
+  <ul class="boxes white">
+  <li>${projects[0].technologies[0]}</li>
+  <li>${projects[0].technologies[1]}</li>
+  <li>${projects[0].technologies[2]}</li>
+  <li>${projects[0].technologies[3]}</li>
+  </ul>
+  <button class="button" id="project1">See Project</button>
+  </article>`
+  }
 
+  else if ('title2' in element){
+   text += `
+    <article class="${element.class}" id="${element.id}">
+    <h2 class="mobile">${element.title}</h2>
+    <h2 class="desktop">${element.title2}</h2>
+    <p>${element.description}</p>
+    <ul class="boxes black">
+    <li>${element.technologies[0]}</li>
+    <li>${element.technologies[1]}</li>
+    <li>${element.technologies[2]}</li>
+    </ul>
+    <button class="button">See Project</button>
+    </article>
+   `
+  }
 
-<article class="${projects[1].class}" id="${projects[1].id}">
-<h2>${projects[1].title}</h2>
-<p>${projects[1].description}</p>
-<ul class="boxes black">
-<li>${projects[1].technologies[0]}</li>
-<li>${projects[1].technologies[1]}</li>
-<li>${projects[1].technologies[2]}</li>
-</ul>
-<button class="button">See Project</button>
-</article>
+  else {
+    text +=`
+      <article class="${element.class}" id="${element.id}">
+      <h2>${element.title}</h2>
+      <p>${element.description}</p>
+      <ul class="boxes black">
+      <li>${element.technologies[0]}</li>
+      <li>${element.technologies[1]}</li>
+      <li>${element.technologies[2]}</li>
+      </ul>
+      <button class="button">See Project</button>
+      </article>
+  `
+  }
+});
 
-<article class="${projects[2].class}" id="${projects[2].id}">
-<h2 class="mobile">${projects[2].title}</h2>
-<h2 class="desktop">${projects[2].title2}</h2>
-<p>${projects[2].description}</p>
-<ul class="boxes black">
-<li>${projects[2].technologies[0]}</li>
-<li>${projects[2].technologies[1]}</li>
-<li>${projects[2].technologies[2]}</li>
-</ul>
-<button class="button">See Project</button>
-</article>
-
-<article class="${projects[3].class}" id="${projects[3].id}">
-<h2 class="mobile">${projects[3].title}</h2>
-<h2 class="desktop">${projects[3].title2} </h2>
-<p>${projects[3].description}</p>
-<ul class="boxes black">
-<li>${projects[3].technologies[0]}</li>
-<li>${projects[3].technologies[1]}</li>
-<li>${projects[3].technologies[2]}</li>
-</ul>
-<button class="button">See Project</button>
-</article>
-
-<article class="${projects[4].class}" id="${projects[4].id}">
-<h2>${projects[4].title}</h2>
-<p>${projects[4].description}</p>
-<ul class="boxes black">
-<li>${projects[4].technologies[0]}</li>
-<li>${projects[4].technologies[1]}</li>
-<li>${projects[4].technologies[2]}</li>
-</ul>
-<button class="button">See Project</button>
-</article>
-
-<article class="${projects[5].class}" id="${projects[5].id}">
-<h2 class="mobile">${projects[5].title}</h2>
-<h2 class="desktop">${projects[5].title2}</h2>
-<p>${projects[5].description}</p>
-<ul class="boxes black">
-<li>${projects[5].technologies[0]}</li>
-<li>${projects[5].technologies[1]}</li>
-<li>${projects[5].technologies[2]}</li>
-</ul>
-<button class="button">See Project</button>
-</article>
-
-<article class="${projects[6].class}" id="${projects[6].id}">
-<h2 class="mobile">${projects[6].title}</h2>
-<h2 class="desktop">${projects[6].title2} </h2>
-<p>${projects[6].description}</p>
-<ul class="boxes black">
-<li>${projects[6].technologies[0]}</li>
-<li>${projects[6].technologies[1]}</li>
-<li>${projects[6].technologies[2]}</li>
-</ul>
-<button class="button">See Project</button>
-</article>
-</section>
-`;
+articlesContainer.innerHTML = text;
 
 document.body.insertBefore(articlesContainer, document.body.children[3]);
 
@@ -190,59 +156,16 @@ const button6 = document.querySelector('#six .button');
 
 const projectWindow = document.querySelector('.popup');
 
-function showMenu0(a) {
-  a.preventDefault();
-  projectWindow.style.display = 'flex';
-  projectWindow.querySelector('h2').innerText = projects[0].title;
-  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[0].description;
+function prevent(e){
+  e.preventDefault();
 }
 
-function showMenu1(a) {
-  a.preventDefault();
+function showMenu(a) {
   projectWindow.style.display = 'flex';
-  projectWindow.querySelector('h2').innerText = projects[1].title;
-  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[1].description;
-  projectWindow.querySelector('#li4').remove();
+  projectWindow.querySelector('h2').innerText = projects[a].title;
+  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[a].description;
 }
 
-function showMenu2(a) {
-  a.preventDefault();
-  projectWindow.style.display = 'flex';
-  projectWindow.querySelector('h2').innerText = projects[2].title;
-  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[2].description;
-  projectWindow.querySelector('#li4').remove();
-}
-
-function showMenu3(a) {
-  a.preventDefault();
-  projectWindow.style.display = 'flex';
-  projectWindow.querySelector('h2').innerText = projects[3].title;
-  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[3].description;
-  projectWindow.querySelector('#li4').remove();
-}
-
-function showMenu4(a) {
-  a.preventDefault();
-  projectWindow.style.display = 'flex';
-  projectWindow.querySelector('h2').innerText = projects[4].title;
-  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[4].description;
-  projectWindow.querySelector('#li4').remove();
-}
-
-function showMenu5(a) {
-  a.preventDefault();
-  projectWindow.style.display = 'flex';
-  projectWindow.querySelector('h2').innerText = projects[5].title;
-  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[5].description;
-  projectWindow.querySelector('#li4').remove();
-}
-
-function showMenu6(a) {
-  a.preventDefault();
-  projectWindow.style.display = 'flex';
-  projectWindow.querySelector('h2').innerText = projects[0].title;
-  projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[6].description;
-}
 
 function hideMenu() {
   projectWindow.style.display = 'none';
@@ -250,10 +173,37 @@ function hideMenu() {
 
 closebutton.addEventListener('click', hideMenu);
 
-button0.addEventListener('click', showMenu0);
-button1.addEventListener('click', showMenu1);
-button2.addEventListener('click', showMenu2);
-button3.addEventListener('click', showMenu3);
-button4.addEventListener('click', showMenu4);
-button5.addEventListener('click', showMenu5);
-button6.addEventListener('click', showMenu6);
+button0.addEventListener('click', () => {
+  prevent();
+  showMenu(0);
+});
+
+button1.addEventListener('click', () => {
+  prevent();
+  showMenu(1);
+});
+
+button2.addEventListener('click', () => {
+  prevent();
+  showMenu(2);
+});
+
+button3.addEventListener('click', () => {
+  prevent();
+  showMenu(3);
+});
+
+button4.addEventListener('click', () => {
+  prevent();
+  showMenu(4);
+});
+
+button5.addEventListener('click', () => {
+  prevent();
+  showMenu(5);
+});
+
+button6.addEventListener('click', () => {
+  prevent();
+  showMenu(6);
+});
