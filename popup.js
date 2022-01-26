@@ -1,86 +1,83 @@
 const projects = [
   {
-    title1:'My Recent Works',
+    title1: 'My Recent Works',
     class1: 'recent',
-    img:'Images/GymFit.png',
+    img: 'Images/GymFit.png',
     id: 'multi',
-    class:'multi',
-    idh2:'Multi',
+    class: 'multi',
+    idh2: 'Multi',
     title: 'Multi-Post Stories',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    technologies:['css', 'html', 'bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
     index: 0,
   },
   {
-    id:'one',
-    title:'Profesional Art Printing Data',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    technologies:['html', 'bootstrap', 'Ruby'],
+    id: 'one',
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
     index: 0,
-    class:'repeated',
-    
+    class: 'repeated',
   },
   {
-    id:'two',
-    title:'Profesional Art Printing Data',
-    title2:'Data Dashboard <br> Healthcare',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    technologies:['html', 'bootstrap', 'Ruby'],
+    id: 'two',
+    title: 'Profesional Art Printing Data',
+    title2: 'Data Dashboard <br> Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
     index: 0,
-    class:'repeated',
+    class: 'repeated',
   },
   {
-    id:'three',
-    title:'Profesional Art Printing Data',
-    title2:'Website Protfolio',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    technologies:['html', 'bootstrap', 'Ruby'],
+    id: 'three',
+    title: 'Profesional Art Printing Data',
+    title2: 'Website Protfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
     index: 0,
-    class:'repeated',
+    class: 'repeated',
   },
   {
-    id:'four',
-    title:'Profesional Art Printing Data',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    technologies:['html', 'bootstrap', 'Ruby'],
+    id: 'four',
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
     index: 0,
-    class:'repeated',
+    class: 'repeated',
   },
   {
-    id:'five',
-    title:'Profesional Art Printing Data',
-    title2:'Data Dashboard <br> Healthcare',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    technologies:['html', 'bootstrap', 'Ruby'],
+    id: 'five',
+    title: 'Profesional Art Printing Data',
+    title2: 'Data Dashboard <br> Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
     index: 0,
-    class:'repeated',
+    class: 'repeated',
   },
   {
-    id:'six',
-    title:'Profesional Art Printing Data',
-    title2:'Website Protfolio',
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    technologies:['html','bootstrap','Ruby'],
+    id: 'six',
+    title: 'Profesional Art Printing Data',
+    title2: 'Website Protfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
     index: 0,
-    class:'repeated',
+    class: 'repeated',
   },
-]
-
-
+];
 
 const articlesContainer = document.createElement('article');
 
@@ -205,7 +202,7 @@ function showMenu1(a) {
   projectWindow.style.display = 'flex';
   projectWindow.querySelector('h2').innerText = projects[1].title;
   projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[1].description;
-  projectWindow.querySelector('#li4').remove;
+  projectWindow.querySelector('#li4').remove();
 }
 
 function showMenu2(a) {
@@ -213,7 +210,7 @@ function showMenu2(a) {
   projectWindow.style.display = 'flex';
   projectWindow.querySelector('h2').innerText = projects[2].title;
   projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[2].description;
-  projectWindow.querySelector('#li4').remove;
+  projectWindow.querySelector('#li4').remove();
 }
 
 function showMenu3(a) {
@@ -221,7 +218,7 @@ function showMenu3(a) {
   projectWindow.style.display = 'flex';
   projectWindow.querySelector('h2').innerText = projects[3].title;
   projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[3].description;
-  projectWindow.querySelector('#li4').remove;
+  projectWindow.querySelector('#li4').remove();
 }
 
 function showMenu4(a) {
@@ -229,7 +226,7 @@ function showMenu4(a) {
   projectWindow.style.display = 'flex';
   projectWindow.querySelector('h2').innerText = projects[4].title;
   projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[4].description;
-  projectWindow.querySelector('#li4').remove;
+  projectWindow.querySelector('#li4').remove();
 }
 
 function showMenu5(a) {
@@ -237,7 +234,7 @@ function showMenu5(a) {
   projectWindow.style.display = 'flex';
   projectWindow.querySelector('h2').innerText = projects[5].title;
   projectWindow.querySelector('.img_description #descriptioncontainer #description').innerText = projects[5].description;
-  projectWindow.querySelector('#li4').remove;
+  projectWindow.querySelector('#li4').remove();
 }
 
 function showMenu6(a) {
