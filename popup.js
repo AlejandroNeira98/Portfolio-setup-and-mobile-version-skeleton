@@ -138,27 +138,29 @@ projects.forEach(element => {
       </article>
   `
   }
+
+  
 });
 
 articlesContainer.innerHTML = text;
 
 document.body.insertBefore(articlesContainer, document.body.children[3]);
 
+projects.forEach(element=>{
+  const btn = document.querySelector('#'+element.id+' .button');
+  console.log('#'+element.id+' .button');
+  btn.addEventListener('click', () => {
+    showMenu(element.index);
+  });
+
+});
+
 const closebutton = document.querySelector('.popup #close');
 
-const button0 = document.querySelector('#multi .button');
-const button1 = document.querySelector('#one .button');
-const button2 = document.querySelector('#two .button');
-const button3 = document.querySelector('#three .button');
-const button4 = document.querySelector('#four .button');
-const button5 = document.querySelector('#five .button');
-const button6 = document.querySelector('#six .button');
 
 const projectWindow = document.querySelector('.popup');
 
-function prevent(e){
-  e.preventDefault();
-}
+
 
 function showMenu(a) {
   projectWindow.style.display = 'flex';
@@ -172,38 +174,3 @@ function hideMenu() {
 }
 
 closebutton.addEventListener('click', hideMenu);
-
-button0.addEventListener('click', () => {
-  prevent();
-  showMenu(0);
-});
-
-button1.addEventListener('click', () => {
-  prevent();
-  showMenu(1);
-});
-
-button2.addEventListener('click', () => {
-  prevent();
-  showMenu(2);
-});
-
-button3.addEventListener('click', () => {
-  prevent();
-  showMenu(3);
-});
-
-button4.addEventListener('click', () => {
-  prevent();
-  showMenu(4);
-});
-
-button5.addEventListener('click', () => {
-  prevent();
-  showMenu(5);
-});
-
-button6.addEventListener('click', () => {
-  prevent();
-  showMenu(6);
-});
