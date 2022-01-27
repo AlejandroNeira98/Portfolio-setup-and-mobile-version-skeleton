@@ -9,7 +9,18 @@ function setData(txt, mail, msg) {
   formOb.text = txt;
   formOb.email = mail;
   formOb.message = msg;
-  localStorage.setItem ('formData', formOb);
+  localStorage.setItem ('formData', JSON.stringify(formOb));
+  console.log(JSON.stringify(formOb))
 }
 
-form1.addEventListener('keyup', (e) => {e.preventDefault(); setData(fullname.value, email.value, message1.value)});
+form1.addEventListener('keyup', (e) => {
+  e.preventDefault(); 
+  setData(fullname.value, email.value, message1.value)
+});
+
+window.onload = () => {
+  const getFormData =JSON.parse(localStorage.getItem('formData'));
+  fullname.value = getFormData.text;
+  email.value = getFormData.email;
+  message1.value = getFormData.message;
+}
