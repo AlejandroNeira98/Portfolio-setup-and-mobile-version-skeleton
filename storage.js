@@ -20,7 +20,9 @@ form1.addEventListener('keyup', (e) => {
 
 window.onload = () => {
   const getFormData =JSON.parse(localStorage.getItem('formData'));
+  if (getFormData !== null) {
   fullname.value = getFormData.text;
   email.value = getFormData.email;
   message1.value = getFormData.message;
+  }
 }
