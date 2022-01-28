@@ -134,8 +134,6 @@ projects.forEach((element) => {
   }
 });
 
-articlesContainer.innerHTML = text;
-
 document.body.insertBefore(articlesContainer, document.body.children[3]);
 
 const closebutton = document.querySelector('.popup #close');
